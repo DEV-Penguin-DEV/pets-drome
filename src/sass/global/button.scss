@@ -1,0 +1,19 @@
+.button {
+  @include button-none();
+  color: #ffffff;
+  padding: 12px 42px;
+
+  &--without-bg {
+    background: rgba(255, 255, 255, 0.01);
+    box-shadow: 0px 4px 0px #d57709;
+    border: 2px solid #F7DE0D;
+    border-radius: 49px;
+  }
+
+  &--with-bg {
+    background: linear-gradient(180deg, #f7de0d 3.5%, #f7a50d 100%),
+      rgba(255, 255, 255, 0.01);
+    box-shadow: 0px 4px 0px #d57709;
+    border-radius: 49px;
+  }
+}

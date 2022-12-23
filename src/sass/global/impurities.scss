@@ -9,13 +9,21 @@
   border: none;
 }
 
-@mixin wrapper($padding, $width: 100vw) {
+@mixin wrapper($padding, $width: 100vw, $max-width: none) {
   padding: 0 $padding;
   width: calc($width - ($padding * 2));
   margin: 0 auto;
+  max-width: calc($max-width - ($padding * 2));
 }
 
 @mixin margin-bottom($margin) {
   margin: 0;
   margin-bottom: $margin;
+}
+
+@mixin defaul-pseudo-element($width, $height: $width) {
+  content: "";
+  position: absolute;
+  width: $width;
+  height: $height;
 }

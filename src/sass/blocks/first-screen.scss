@@ -1,0 +1,45 @@
+.first-screen {
+  padding: 90px 0 84px 0;
+
+  &::before {
+    @include defaul-pseudo-element(100%, 63.26vw);
+    background: url("./../../public/img/first-screen-bg.png") no-repeat center
+      center;
+    background-size: contain;
+    left: 0;
+    top: -10px;
+    z-index: -2;
+    max-height: 1012px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("./../../public/img/first-screen-bg@2x.png") no-repeat
+        center center;
+      background-size: contain;
+    }
+  }
+}
+
+.first-screen__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+
+  text-transform: uppercase;
+  color: #f8ab0e;
+
+  @include margin-bottom(16px);
+}
+
+.first-screen__text {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 125%;
+
+  text-transform: uppercase;
+  color: #ffffff;
+  max-width: 635px;
+
+  @include margin-bottom(32px);
+}
