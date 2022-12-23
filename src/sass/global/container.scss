@@ -1,0 +1,4 @@
+.container {
+  @include wrapper(29px, 375px);
+  margin: 0 auto;
+}
