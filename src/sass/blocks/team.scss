@@ -1,0 +1,15 @@
+.team {
+  margin-bottom: 160px;
+}
+
+.team__title {
+  @include margin-bottom(48px);
+}
+
+.team__list {
+  @include list-none();
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 32px;
+  width: 100%;
+}

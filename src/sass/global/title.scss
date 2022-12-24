@@ -4,4 +4,10 @@
   font-weight: 400;
   font-size: 32px;
   line-height: 37px;
+
+  &--h3 {
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+  }
 }

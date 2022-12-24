@@ -1,0 +1,18 @@
+.step {
+  background: linear-gradient(180deg, #c0eeff 44.04%, #9dd0ff 107.11%);
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 10px 0px #5d9fe4, 0px 16px 24px rgba(9, 30, 62, 0.06);
+  border-radius: 0px 60px 60px 60px;
+  padding: 40px;
+  max-width: 686px;
+}
+
+.step__title {
+  @include margin-bottom(24px);
+}
+
+.step__text {
+  &:not(:last-child) {
+    @include margin-bottom(20px);
+  }
+}

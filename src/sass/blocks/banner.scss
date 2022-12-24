@@ -1,0 +1,30 @@
+.banner {
+  text-align: center;
+  padding: 101px 0 111px 0;
+  background: linear-gradient(180deg, #f7de0d 3.5%, #f7a50d 100%);
+  box-shadow: inset 0px -8px 16px rgba(255, 255, 255, 0.5),
+    inset 0px 8px 16px rgba(163, 122, 8, 0.5);
+  margin-bottom: 160px;
+}
+
+.banner__title {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 63px;
+  max-width: 868px;
+
+  color: #ffffff;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.banner__text {
+  font-size: 16px;
+  line-height: 145%;
+  max-width: 638px;
+
+  color: #ffffff;
+  margin: 0 auto;
+}

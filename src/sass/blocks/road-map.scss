@@ -1,0 +1,11 @@
+.road-map {
+  margin-bottom: 160px;
+}
+
+.road-map__title {
+  @include margin-bottom(119px);
+}
+
+.road-map__list {
+  @include list-none();
+}

@@ -1,0 +1,24 @@
+.about-game {
+  margin-bottom: 160px;
+}
+
+.about-game__list {
+  @include list-none();
+}
+
+.about-game__item {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-bottom: 160px;
+}
+
+.about-game__title {
+  @include margin-bottom(24px);
+}
+
+.about-game__img {
+  display: block;
+  margin: 0 auto;
+}

@@ -1,0 +1,11 @@
+.person-card {
+  text-align: center;
+}
+
+.person-card__name {
+  @include margin-bottom(8px);
+}
+
+.person-card__company-position {
+  margin: 0;
+}
