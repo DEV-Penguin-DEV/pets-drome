@@ -32,6 +32,12 @@ module.exports = {
           'sass-loader',
         ],
       },
+      {
+        test: /\.(ttf)$/,
+        use: {
+          loader: 'url-loader',
+        },
+      },
     ]
   }
 };

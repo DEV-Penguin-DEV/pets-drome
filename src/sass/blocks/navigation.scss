@@ -4,16 +4,7 @@
   flex-wrap: wrap;
   width: 100%;
   align-items: center;
-}
-
-.navigation__item {
-  &:first-child {
-    margin-right: 26.3%;
-  }
-
-  &:last-child {
-    margin-left: 23.47%;
-  }
+  justify-content: space-between;
 }
 
 .navigation__links-list {
