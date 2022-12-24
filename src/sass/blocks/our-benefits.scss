@@ -1,0 +1,20 @@
+.our-benefits {
+  margin-bottom: 160px;
+}
+
+.our-benefits__list {
+  @include list-none();
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: 1100px) {
+    flex-direction: column;
+  }
+}
+
+.our-benefits__title {
+  @include margin-bottom(48px);
+  max-width: 718px;
+}

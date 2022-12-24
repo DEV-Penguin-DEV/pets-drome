@@ -1,0 +1,17 @@
+.our-uniqueness {
+  padding-top: 139px;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-bottom: 263px;
+}
+
+.our-uniqueness__title {
+  @include margin-bottom(24px);
+}
+
+.our-uniqueness__img {
+  display: block;
+  margin: 0 auto;
+}

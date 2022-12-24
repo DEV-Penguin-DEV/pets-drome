@@ -43,3 +43,15 @@
 
   @include margin-bottom(32px);
 }
+
+.first-screen__buttons-container {
+  margin-bottom: 240px;
+}
+
+.first-screen__button {
+  padding: 16px 48px;
+
+  &:first-child {
+    margin-right: 16px;
+  }
+}

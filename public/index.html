@@ -1,17 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PET'S DROME</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <body class="page">
-    <h1 class="page__title visually-hidden">PET'S DROME</h1>
+  <link rel="preload" href="fonts/Poppins-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Poppins-SemiBold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="fonts/TitanOne-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lto-regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
-    <header class="main-header container">
+  <title>PET'S DROME</title>
+</head>
+
+<body class="page">
+  <h1 class="page__title visually-hidden">PET'S DROME</h1>
+
+  <header class="main-header container">
+    <nav class="main-header__navigation navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">
+            <img class="navigation__logo" src="img/logo.svg" width="121" height="60" alt="Logo.">
+          </a>
+        </li>
+
+        <ul class="navigation__links-list">
+          <li class="navigationr__link-item">
+            <a href="#" class="navigation__link">Whitepaper</a>
+          </li>
+
+          <li class="navigation__link-item">
+            <a href="#" class="navigation__link">Roadmap</a>
+          </li>
+
+          <li class="navigation__link-item">
+            <a href="#" class="navigation__link">Pets</a>
+          </li>
+
+          <li class="navigation__link-item">
+            <a href="#" class="navigation__link">Team</a>
+          </li>
+        </ul>
+
+        <li class="navigation__item">
+          <button class="navigation__button button button--without-bg">Play Now</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <section class="first-screen">
+      <div class="first-screen__container container">
+        <h2 class="first-screen__title">Welcome to the world of PET`s DROMe</h2>
+        <p class="first-screen__text">More than play
+          & earn environment NFT game</p>
+
+        <div class="first-screen__buttons-container">
+          <button class="first-screen__button button button--with-bg">Play Now</button>
+          <button class="first-screen__button button button--without-bg">NFT Market</button>
+        </div>
+
+        <div class="first-screen__crypto-exchanges crypto-exchanges">
+          <ul class="crypto-exchanges__list">
+            <li class="crypto-exchanges__item">
+              <img src="img/sasori.png" width="192" height="75" srcset="img/sasori@2x.png 2x" alt="Sasoripad.">
+            </li>
+
+            <li class="crypto-exchanges__item">
+              <img src="img/binance.png" width="192" height="75" srcset="img/binance@2x.png 2x" alt="Binance.">
+            </li>
+
+            <li class="crypto-exchanges__item">
+              <img src="img/solana.png" width="192" height="75" srcset="img/solana@2x.png 2x" alt="Solana.">
+            </li>
+
+            <li class="crypto-exchanges__item">
+              <img src="img/wax.png" width="192" height="75" srcset="img/wax@2x.png 2x" alt="Wax.">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-uniqueness container">
+      <div class="our-uniqueness__img-container img-container">
+        <img src="img/horse.png" width="425" srcset="img/horse@2x.png 2x" alt="Horse." class="our-uniqueness__img">
+      </div>
+      <div class="our-uniqueness__text-content">
+        <h2 class="our-uniqueness__title title">Radically new concept of
+          a gameplay where everything you own you actually own</h2>
+        <p class="our-uniqueness__text text">Because is a new concept of a game and a gameplay where everything you own
+          you
+          actually own it inside and outside of the game servers with multiblockchain autenthication NFT technologies
+          to
+          back your digital assets up.</p>
+      </div>
+    </section>
+
+    <section class="our-benefits container">
+      <h2 class="our-benefits__title title">Outside of the game with multiblockchain autenthication NFT technologies
+        to back your digital assets up</h2>
+
+      <ul class="our-benefits__list">
+        <li class="our-benefits__item benefit">
+          <img class="benefit__img" width="56" height="56" src="img/pd-token.svg" alt="PD-token.">
+          <h3 class="benefit__title">PD Token</h3>
+          <p class="benefit__text text">This is our in-game token, which is always 1:1 with USD. Thus allowing nothing
+            to
+            be affected by the trade. And we will ensure everyone's liquidity.</p>
+        </li>
+
+        <li class="our-benefits__item benefit">
+          <img class="benefit__img" width="56" height="56" src="img/multichain.svg" alt="Multichain.">
+          <h3 class="benefit__title">Multichain</h3>
+          <p class="benefit__text text">Multichain technology allows us to access the game from several decentralized
+            networks with the aim of facilitating access to the player.</p>
+        </li>
+
+        <li class="our-benefits__item benefit">
+          <img class="benefit__img" width="56" height="56" src="img/daos.svg" alt="DAOs.">
+          <h3 class="benefit__title">DAOs</h3>
+          <p class="benefit__text text">They will decide the future aspects of our metaverse, voting on political
+            changes,
+            economic endeavors, and even the game's content design.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__container container">
       <nav class="main-header__navigation navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -43,123 +164,13 @@
           </li>
         </ul>
       </nav>
-    </header>
-
-    <main class="main-content">
-      <section class="first-screen">
-        <div class="first-screen__container container">
-          <h2 class="first-screen__title">Welcome to the world of PET`s DROMe</h2>
-          <p class="first-screen__text">More than play
-            & earn environment NFT game</p>
-
-          <div class="first-screen__buttons-container">
-            <button class="first-screen__button button button--with-bg">Play Now</button>
-            <button class="first-screen__button button button--without-bg">NFT Market</button>
-          </div>
-
-          <div class="first-screen__crypto-exchanges crypto-exchanges">
-            <ul class="crypto-exchanges__list">
-              <li class="crypto-exchanges__item">
-                <img src="img/sasori.png" width="192" height="75" srcset="img/sasori@2x.png 2x" alt="Sasoripad.">
-              </li>
-
-              <li class="crypto-exchanges__item">
-                <img src="img/binance.png" width="192" height="75" srcset="img/binance@2x.png 2x" alt="Binance.">
-              </li>
-
-              <li class="crypto-exchanges__item">
-                <img src="img/solana.png" width="192" height="75" srcset="img/solana@2x.png 2x" alt="Solana.">
-              </li>
-
-              <li class="crypto-exchanges__item">
-                <img src="img/wax.png" width="192" height="75" srcset="img/wax@2x.png 2x" alt="Wax.">
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="our-uniqueness">
-        <div class="our-uniqueness__img-container">
-          <img src="img/horse.png" width="425" height="293" srcset="img/horse@2x.png 2x" alt="Horse."
-            class="our-uniqueness__img">
-        </div>
-        <div class="our-uniqueness__text-content">
-          <h2 class="our-uniqueness__title title">Radically new concept of
-            a gameplay where everything you own you actually own</h2>
-          <p class="our-uniqueness__text">Because is a new concept of a game and a gameplay where everything you own you
-            actually own it inside and outside of the game servers with multiblockchain autenthication NFT technologies
-            to
-            back your digital assets up.</p>
-        </div>
-      </section>
-
-      <section class="our-benefits">
-        <h2 class="our-benefits__title title">Outside of the game with multiblockchain autenthication NFT technologies
-          to back your digital assets up</h2>
-
-        <ul class="our-benefits__list">
-          <li class="our-benefits__item benefit">
-            <img class="benefit__img" width="56" height="56" src="img/pd-token.svg" alt="PD-token.">
-            <h3 class="benefit__title">PD Token</h3>
-            <p class="benefit__text">This is our in-game token, which is always 1:1 with USD. Thus allowing nothing to
-              be affected by the trade. And we will ensure everyone's liquidity.</p>
-          </li>
-
-          <li class="our-benefits__item benefit">
-            <img class="benefit__img" width="56" height="56" src="img/multichain.svg" alt="Multichain.">
-            <h3 class="benefit__title">Multichain</h3>
-            <p class="benefit__text">Multichain technology allows us to access the game from several decentralized
-              networks with the aim of facilitating access to the player.</p>
-          </li>
-
-          <li class="our-benefits__item benefit">
-            <img class="benefit__img" width="56" height="56" src="img/daos.svg" alt="DAOs.">
-            <h3 class="benefit__title">DAOs</h3>
-            <p class="benefit__text">They will decide the future aspects of our metaverse, voting on political changes,
-              economic endeavors, and even the game's content design.</p>
-          </li>
-        </ul>
-      </section>
-    </main>
-
-    <footer class="main-footer container">
-      <nav class="main-footer__navigation navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">
-              <img class="navigation__logo" width="121" height="60" src="img/logo.svg" alt="Logo.">
-            </a>
-          </li>
-
-          <ul class="navigation__links-list">
-            <li class="navigationr__item">
-              <a href="#" class="navigation__link">Whitepaper</a>
-            </li>
-
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Roadmap</a>
-            </li>
-
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Pets</a>
-            </li>
-
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Team</a>
-            </li>
-          </ul>
-
-          <li class="navigation__item">
-            <button class="navigation__button button button--without-bg">Play Now</button>
-          </li>
-        </ul>
-      </nav>
 
       <p class="main-footer__text">Copyright © PET`S DROME 2022. All rights reserved.</p>
-    </footer>
+    </div>
 
-    <script src="bundle.js"></script>
-  </body>
+  </footer>
+
+  <script src="bundle.js"></script>
+</body>
 
 </html>

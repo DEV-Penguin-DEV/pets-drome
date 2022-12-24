@@ -1,0 +1,14 @@
+.crypto-exchanges__list {
+  @include list-none();
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 864px;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.crypto-exchanges__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}

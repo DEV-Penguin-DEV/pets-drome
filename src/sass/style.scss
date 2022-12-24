@@ -1,12 +1,19 @@
-@import "global/visually-hidden.scss";
 @import "global/fonts.scss";
+@import "global/visually-hidden.scss";
 @import "global/variables.scss";
 @import "global/impurities.scss";
 @import "global/container.scss";
 @import "global/title.scss";
 @import "global/page.scss";
 @import "global/button.scss";
+@import "global/text.scss";
+@import "global/img-container.scss";
 
 @import "blocks/main-header.scss";
 @import "blocks/navigation.scss";
 @import "blocks/first-screen.scss";
+@import "blocks/crypto-exchanges.scss";
+@import "blocks/our-uniqueness.scss";
+@import "blocks/our-benefits.scss";
+@import "blocks/benefit.scss";
+@import "blocks/main-footer.scss";

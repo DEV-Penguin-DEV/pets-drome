@@ -1,0 +1,12 @@
+.img-container {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  transition: 1.5s;
+  background: url("./../../public/img/horse-bg.png") no-repeat center center;
+  background-size: contain;
+
+  &:hover {
+    background-image: url("./../../public/img/horse-bg--hover.png");
+  }
+}

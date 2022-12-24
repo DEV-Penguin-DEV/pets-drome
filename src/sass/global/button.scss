@@ -1,13 +1,35 @@
 .button {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
   @include button-none();
   color: #ffffff;
   padding: 12px 42px;
+  cursor: pointer;
+  transition: 0.45s;
 
   &--without-bg {
     background: rgba(255, 255, 255, 0.01);
     box-shadow: 0px 4px 0px #d57709;
-    border: 2px solid #F7DE0D;
+    border: 2px solid #f7de0d;
     border-radius: 49px;
+
+    &:hover {
+      box-shadow: none;
+    }
+
+    &:active {
+      background: linear-gradient(180deg, #f7de0d 3.5%, #f7a50d 100%),
+        rgba(255, 255, 255, 0.01);
+      box-shadow: 0px 4px 0px #d57709;
+    }
+
+    &:disabled {
+      background: linear-gradient(180deg, #f7de0d 3.5%, #f7a50d 100%),
+        rgba(255, 255, 255, 0.01);
+      opacity: 0.6;
+    }
   }
 
   &--with-bg {
@@ -15,5 +37,14 @@
       rgba(255, 255, 255, 0.01);
     box-shadow: 0px 4px 0px #d57709;
     border-radius: 49px;
+
+    &:hover {
+      box-shadow: none;
+    }
+
+    &:active {
+      box-shadow: inset -4px -4px 4px rgba(255, 255, 255, 0.45),
+        inset 4px 4px 4px rgba(11, 9, 0, 0.35);
+    }
   }
 }
