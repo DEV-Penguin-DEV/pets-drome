@@ -13,9 +13,22 @@
   border-radius: 24px;
   padding: 40px;
   box-sizing: border-box;
+  transition: 0.7s;
 
   &:not(:last-child) {
     margin-bottom: 32px;
+  }
+
+  &:hover {
+    box-shadow: 0px 16px 24px rgba(9, 30, 62, 0.06);
+    cursor: pointer;
+  }
+
+  &:active {
+    box-shadow: 0px 16px 24px rgba(9, 30, 62, 0.06),
+      inset 0px -4px 4px rgba(255, 255, 255, 0.3),
+      inset 0px 4px 4px rgba(8, 45, 84, 0.26);
+      cursor: pointer;
   }
 }
 

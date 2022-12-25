@@ -1,5 +1,6 @@
 .progress-bar {
   margin-bottom: 32px;
+  position: relative;
 }
 
 .progress-bar__points-container {
@@ -19,6 +20,8 @@
   &--progress {
     background: linear-gradient(180deg, #f7de0d 0%, #f7a50d 100%);
     width: 15%;
+    position: absolute;
+    bottom: 0;
   }
 }
 
@@ -44,6 +47,16 @@
     z-index: -1;
   }
 
+  &::after {
+    @include defaul-pseudo-element(20px, 20px);
+    background: #8bccf7;
+    box-shadow: 0px 2px 0px #d57709;
+    border-radius: 50%;
+    bottom: -48px;
+    left: 27.5px;
+    border: 1px solid #f7a50d;
+  }
+
   &--quartal {
     font-family: "Titan One";
     font-weight: 400;
@@ -67,6 +80,20 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       text-fill-color: transparent;
+    }
+
+    &::before {
+      background: #d57709;
+      bottom: -40px;
+      left: -2px;
+    }
+
+    &::after {
+      background: linear-gradient(180deg, #f7de0d 0%, #f7a50d 100%),
+        linear-gradient(226.3deg, #f8ab0e -12.22%, #ffffff 97.84%);
+      left: -10px;
+      border: none;
+      z-index: 2;
     }
   }
 }
