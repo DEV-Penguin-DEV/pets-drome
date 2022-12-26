@@ -19,50 +19,55 @@
   <h1 class="page__title visually-hidden">PET'S DROME</h1>
 
   <header class="main-header container">
-    <nav class="main-header__navigation navigation">
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">
+    <div class="">
+      <nav class="main-header__navigation navigation">
+        <a href="#" class="navigation__link navigation__link--logo">
+          <picture>
+            <source media="(max-width: 850px)" width="96" height="48" srcset="img/logo.svg">
+
             <img class="navigation__logo" src="img/logo.svg" width="121" height="60" alt="Logo.">
-          </a>
-        </li>
+          </picture>
+        </a>
 
-        <ul class="navigation__links-list">
-          <li class="navigation__link-item navigation__link-item--whitepaper">
-            <a href="#" class="navigation__link">Whitepaper</a>
-            <ul class="language-settings">
-              <li class="language-settings__lang">
-                <button class="language-settings__button language-settings__button--active">English</button>
-              </li>
+        <div class="main-header__mobile-menu-container">
+          <ul class="navigation__list main-header__mobile-menu-container-centring">
+            <li class="navigation__link-item navigation__link-item--whitepaper">
+              <a href="#" class="navigation__link">Whitepaper</a>
+              <ul class="language-settings">
+                <li class="language-settings__lang">
+                  <button class="language-settings__button language-settings__button--active">English</button>
+                </li>
 
-              <li class="language-settings__lang">
-                <button class="language-settings__button">Russian</button>
-              </li>
+                <li class="language-settings__lang">
+                  <button class="language-settings__button">Russian</button>
+                </li>
 
-              <li class="language-settings__lang">
-                <button class="language-settings__button">Spanish</button>
-              </li>
-            </ul>
-          </li>
+                <li class="language-settings__lang">
+                  <button class="language-settings__button">Spanish</button>
+                </li>
+              </ul>
+            </li>
 
-          <li class="navigation__link-item">
-            <a href="#" class="navigation__link">Roadmap</a>
-          </li>
+            <li class="navigation__link-item">
+              <a href="#" class="navigation__link">Roadmap</a>
+            </li>
 
-          <li class="navigation__link-item">
-            <a href="#" class="navigation__link">Pets</a>
-          </li>
+            <li class="navigation__link-item">
+              <a href="#" class="navigation__link">Pets</a>
+            </li>
 
-          <li class="navigation__link-item">
-            <a href="#" class="navigation__link">Team</a>
-          </li>
-        </ul>
+            <li class="navigation__link-item">
+              <a href="#" class="navigation__link">Team</a>
+            </li>
+          </ul>
+        </div>
 
-        <li class="navigation__item">
-          <button class="navigation__button button button--without-bg">Play Now</button>
-        </li>
-      </ul>
-    </nav>
+        <button class="navigation__button button button--without-bg">Play Now</button>
+
+        <button type="button" class="main-header__mobile-menu-button"><span class="visually-hidden">Мобильное
+            меню</span></button>
+      </nav>
+    </div>
   </header>
 
   <main class="main-content">
@@ -504,14 +509,16 @@
   <footer class="main-footer">
     <div class="main-footer__container container">
       <nav class="main-header__navigation navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">
-              <img class="navigation__logo" src="img/logo.svg" width="121" height="60" alt="Logo.">
-            </a>
-          </li>
+        <a href="#" class="navigation__link navigation__link--logo">
+          <picture>
+            <source media="(max-width: 850px)" width="96" height="48" srcset="img/logo.svg">
 
-          <ul class="navigation__links-list">
+            <img class="navigation__logo" src="img/logo.svg" width="121" height="60" alt="Logo.">
+          </picture>
+        </a>
+
+        <div class="main-header__mobile-menu-container">
+          <ul class="navigation__list main-header__mobile-menu-container-centring">
             <li class="navigation__link-item navigation__link-item--whitepaper">
               <a href="#" class="navigation__link">Whitepaper</a>
               <ul class="language-settings">
@@ -541,11 +548,12 @@
               <a href="#" class="navigation__link">Team</a>
             </li>
           </ul>
+        </div>
 
-          <li class="navigation__item">
-            <button class="navigation__button button button--without-bg">Play Now</button>
-          </li>
-        </ul>
+        <button class="navigation__button button button--without-bg">Play Now</button>
+
+        <button type="button" class="main-header__mobile-menu-button"><span class="visually-hidden">Мобильное
+            меню</span></button>
       </nav>
 
       <p class="main-footer__text">Copyright © PET`S DROME 2022. All rights reserved.</p>

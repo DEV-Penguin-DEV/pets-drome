@@ -1,4 +1,8 @@
 .container {
-  @include wrapper(64px, 100vw, 1440px);
+  @include wrapper(32px, 100vw, 1440px);
   margin: 0 auto;
+
+  @media (max-width: $max-mobile-width) {
+    @include wrapper(16px, 100vw);
+  }
 }

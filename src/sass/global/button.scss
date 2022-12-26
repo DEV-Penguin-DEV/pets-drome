@@ -9,6 +9,12 @@
   cursor: pointer;
   transition: 0.45s;
 
+  @media (max-width: $max-mobile-width) {
+    padding: 6px 16px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
   &--without-bg {
     background: rgba(255, 255, 255, 0.01);
     box-shadow: 0px 4px 0px #d57709;

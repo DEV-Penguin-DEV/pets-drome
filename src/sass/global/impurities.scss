@@ -10,11 +10,15 @@
   padding: 0;
 }
 
-@mixin wrapper($padding, $width: 100vw, $max-width: none) {
+@mixin wrapper($padding, $width: 100vw, $max-width: true) {
   padding: 0 $padding;
   width: calc($width - ($padding * 2));
   margin: 0 auto;
-  max-width: calc($max-width - ($padding * 2));
+  @if $max-width {
+    max-width: none;
+  } @else {
+    max-width: calc($max-width - ($padding * 2));
+  }
 }
 
 @mixin margin-bottom($margin) {

@@ -1,4 +1,4 @@
-.navigation__list {
+.navigation {
   @include list-none();
   display: flex;
   flex-wrap: wrap;
@@ -7,12 +7,14 @@
   justify-content: space-between;
 }
 
-.navigation__links-list {
+.navigation__list {
   @include list-none();
-  width: 29%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media (min-width: $max-mobile-width) {
+    width: 100%;
+  }
 }
 
 .navigation__link-item {
@@ -56,5 +58,118 @@
     text-transform: uppercase;
     color: #ffffff;
     text-shadow: 0px 2px 0px #d57709;
+  }
+
+  &--logo {
+    @media (max-width: $max-mobile-width) {
+      margin-right: 25%;
+    }
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .main-header__mobile-menu-button {
+    display: block;
+    @include button-none();
+    width: 33px;
+    height: 32px;
+    background: url("./../../public/img/heroicons-solid_menu-alt-1.svg")
+      no-repeat center center;
+    cursor: pointer;
+    z-index: 1;
+
+    &--opened {
+      transition: 1.5s;
+      transform: rotate(360deg);
+      width: 32px;
+      height: 32px;
+      background: url("./../../public/img/raphael_cross.svg") no-repeat center
+        center;
+    }
+
+    &--closed-animation {
+      transition: 2s;
+      transform: rotate(-360deg);
+    }
+  }
+
+  .main-header__mobile-menu-container {
+    left: -150vw;
+    position: fixed;
+    width: 100vw;
+    z-index: 0;
+    left: 0px;
+    text-align: left;
+    top: -25vh;
+    padding-top: 68px;
+    background: url("./../../public/img/mobile-menu-bg.png") no-repeat center
+      top;
+    background-size: cover;
+    height: 0;
+    transition: background-size 1s;
+    transition-delay: 3s;
+
+    &--opened {
+      animation: mobile-menu__appearance 2s;
+      animation-fill-mode: forwards;
+
+      background-size: contain;
+
+      .navigation__link {
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+    &--closed {
+      animation: mobile-menu__disappearing 2s;
+      animation-fill-mode: forwards;
+    }
+
+    .main-header__mobile-menu-container-centring {
+      @include wrapper(16px, 100wv);
+      position: relative;
+    }
+  }
+
+  .main-menu {
+    margin-bottom: 150px;
+  }
+
+  .navigation__list {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navigation__link-item {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  .navigation__link {
+    font-size: 0;
+    line-height: 0;
+    transition: 2s;
+  }
+
+  @keyframes mobile-menu__appearance {
+    from {
+      top: -25vh;
+      height: 0;
+    }
+    to {
+      top: 0px;
+      height: 100vh;
+    }
+  }
+  @keyframes mobile-menu__disappearing {
+    from {
+      top: 0px;
+      height: 100vh;
+    }
+    to {
+      top: -25vh;
+      height: 0;
+    }
   }
 }
