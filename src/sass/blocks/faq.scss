@@ -6,6 +6,10 @@
   @include list-none();
 }
 
+.faq__title {
+  @include margin-bottom(48px);
+}
+
 .faq__item {
   width: 100%;
   background: linear-gradient(180deg, #c0eeff 0%, #9dd0ff 100%);
@@ -28,7 +32,7 @@
     box-shadow: 0px 16px 24px rgba(9, 30, 62, 0.06),
       inset 0px -4px 4px rgba(255, 255, 255, 0.3),
       inset 0px 4px 4px rgba(8, 45, 84, 0.26);
-      cursor: pointer;
+    cursor: pointer;
   }
 }
 
@@ -51,19 +55,24 @@
   right: 0;
   top: 0;
   cursor: pointer;
-
-  &--open {
-    background-image: url("./../../public/img/ic_baseline-minus.svg");
-  }
 }
 
 .question__text {
   display: block;
-  height: 0%;
   font-size: 0;
+  transition: 0.7s;
+}
 
+.question {
   &--open {
-    margin: 0;
-    margin-top: 16px;
+    & .question__text {
+      margin: 0;
+      margin-top: 16px;
+      font-size: 16px;
+    }
+
+    & .question__button {
+      background-image: url("./../../public/img/ic_baseline-minus.svg");
+    }
   }
 }
