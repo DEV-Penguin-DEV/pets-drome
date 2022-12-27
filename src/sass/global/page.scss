@@ -13,4 +13,46 @@ html {
   color: $main-text-color;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
+
+  &--opened-mobile-menu::before {
+    @include defaul-pseudo-element(100vw, 100%);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    animation-name: mobile-menu-opened;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  &--closed-mobile-menu::before {
+    @include defaul-pseudo-element(100vw, 100vh);
+    z-index: 0;
+    top: 0;
+    left: 0;
+    animation-name: mobile-menu-closed;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes mobile-menu-opened {
+    from {
+      background: rgba(0, 0, 0, 0);
+      backdrop-filter: blur(0px);
+    }
+    to {
+      background: rgba(0, 0, 0, 0.05);
+      backdrop-filter: blur(13px);
+    }
+  }
+  @keyframes mobile-menu-closed {
+    from {
+      background: rgba(0, 0, 0, 0.05);
+      backdrop-filter: blur(13px);
+    }
+    to {
+      background: none;
+      backdrop-filter: blur(0px);
+    }
+  }
 }

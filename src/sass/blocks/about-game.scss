@@ -1,5 +1,9 @@
 .about-game {
   margin-bottom: 160px;
+
+  @media (min-width: $max-mobile-width) {
+    margin-bottom: 120px;
+  }
 }
 
 .about-game__list {
@@ -12,6 +16,23 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   margin-bottom: 160px;
+
+  @media (min-width: $max-mobile-width) {
+    margin-bottom: 80px;
+
+    &:nth-child(2) .about-game__img-container {
+      order: 2;
+    }
+  }
+
+  @media (max-width: $max-mobile-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    padding-top: 0;
+    margin-bottom: 120px;
+  }
 }
 
 .about-game__title {

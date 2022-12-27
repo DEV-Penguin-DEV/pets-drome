@@ -1,5 +1,9 @@
 .our-benefits {
   margin-bottom: 160px;
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 120px;
+  }
 }
 
 .our-benefits__list {
@@ -17,4 +21,9 @@
 .our-benefits__title {
   @include margin-bottom(48px);
   max-width: 718px;
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 40px;
+    max-width: none;
+  }
 }

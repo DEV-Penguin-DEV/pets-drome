@@ -1,12 +1,18 @@
 .img-container {
-  height: 400px;
+  height: 27vw;
   display: flex;
   align-items: center;
   transition: 0.7s;
   background: url("./../../public/img/horse-bg.png") no-repeat center center;
   background-size: contain;
+  justify-content: center;
 
   &:hover {
     background-image: url("./../../public/img/horse-bg--hover.png");
+  }
+
+  @media(max-width: $max-mobile-width) {
+    height: 57vw;
+    margin-bottom: 32px;
   }
 }
