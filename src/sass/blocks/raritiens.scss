@@ -1,7 +1,15 @@
 .raritiens {
   margin-bottom: 160px;
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 120px;
+  }
 }
 
 .raritiens__title {
   @include margin-bottom(48px);
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 40px;
+  }
 }

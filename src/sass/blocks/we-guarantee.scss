@@ -1,9 +1,17 @@
 .we-guarantee {
   margin-bottom: 160px;
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 120px;
+  }
 }
 
 .we-guarantee__title {
   @include margin-bottom(48px);
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .we-guarantee__list {
@@ -13,7 +21,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
-  @media (max-width: 1100px) {
+  @media (max-width: $max-mobile-width) {
     flex-direction: column;
   }
 }

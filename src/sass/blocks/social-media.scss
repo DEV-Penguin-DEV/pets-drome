@@ -1,9 +1,17 @@
 .social-media {
   margin-bottom: 160px;
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 120px;
+  }
 }
 
 .social-media__title {
   @include margin-bottom(48px);
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .social-media__list {
@@ -12,6 +20,13 @@
   width: 100%;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 0;
+
+  @media (max-width: $max-mobile-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 8px;
+  }
 }
 
 .social-media__item {
@@ -24,8 +39,17 @@
   height: 250px;
   transition: 0.5s;
 
+  @media (max-width: $max-mobile-width) {
+    width: calc((100vw - 32px) / 2 - 8px);
+    height: calc((100vw - 32px) / 2 - 8px);
+  }
+
   &:not(:last-child) {
     margin-bottom: 35px;
+
+    @media (max-width: $max-mobile-width) {
+      margin: 0;
+    }
   }
 
   &:hover {

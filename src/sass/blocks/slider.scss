@@ -3,7 +3,6 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-bottom: 24px;
 }
 
 .slider__item {
@@ -23,7 +22,7 @@
   }
 
   &--shown {
-    @media (min-width: 1000px) {
+    @media (min-width: $max-mobile-width) {
       display: block;
     }
   }
@@ -32,9 +31,9 @@
     width: 44%;
     opacity: 1;
 
-    @media (max-width: 1000px) {
+    @media (max-width: $max-mobile-width) {
       display: block;
-      width: 80%;
+      width: 100%;
       margin: 0 auto;
     }
 
@@ -58,6 +57,14 @@
   display: block;
   margin: 0 auto;
   opacity: 0.6;
+}
+
+.slider__img-container {
+  margin-bottom: 24px;
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .slider__menu-list {

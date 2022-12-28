@@ -1,5 +1,9 @@
 .faq {
   margin-bottom: 160px;
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 120px;
+  }
 }
 
 .faq__list {
@@ -8,6 +12,10 @@
 
 .faq__title {
   @include margin-bottom(48px);
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .faq__item {
@@ -18,9 +26,14 @@
   padding: 40px;
   box-sizing: border-box;
   transition: 0.7s;
+  position: relative;
 
   &:not(:last-child) {
     margin-bottom: 32px;
+
+    @media (max-width: $max-mobile-width) {
+      margin-bottom: 25px;
+    }
   }
 
   &:hover {
@@ -38,6 +51,11 @@
 
 .question__title {
   margin: 0;
+
+  @media (max-width: $max-mobile-width) {
+    font-size: 18px;
+    line-height: 120%;
+  }
 }
 
 .question__title-container {
@@ -52,9 +70,16 @@
     center;
   width: 24px;
   height: 24px;
-  right: 0;
-  top: 0;
+  right: 16px;
+  top: 26px;
   cursor: pointer;
+
+  @media (max-width: $max-mobile-width) {
+    position: absolute;
+
+    width: 16px;
+    height: 16px;
+  }
 }
 
 .question__text {

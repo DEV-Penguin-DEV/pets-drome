@@ -1,11 +1,30 @@
 .person-card {
   text-align: center;
+
+  @media (max-width: $max-mobile-width) {
+    width: 44.8vw;
+  }
+}
+
+.person-card__img {
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 16px;
+  }
 }
 
 .person-card__name {
   @include margin-bottom(8px);
+
+  @media (max-width: $max-mobile-width) {
+    font-size: 18px;
+    line-height: 120%;
+  }
 }
 
 .person-card__company-position {
   margin: 0;
+
+  @media (max-width: $max-mobile-width) {
+    font-size: 12px;
+  }
 }

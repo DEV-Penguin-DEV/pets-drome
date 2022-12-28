@@ -5,14 +5,28 @@
   border-radius: 0px 60px 60px 60px;
   padding: 40px;
   max-width: 686px;
+  box-sizing: border-box;
+
+  @media (max-width: $max-mobile-width) {
+    padding: 24px;
+    width: 82vw;
+  }
 }
 
 .step__title {
   @include margin-bottom(24px);
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 16px;
+  }
 }
 
 .step__text {
   &:not(:last-child) {
     @include margin-bottom(20px);
+
+    @media (max-width: $max-mobile-width) {
+      margin-bottom: 8px;
+    }
   }
 }

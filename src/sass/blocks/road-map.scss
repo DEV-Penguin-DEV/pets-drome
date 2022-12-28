@@ -1,11 +1,30 @@
 .road-map {
   margin-bottom: 160px;
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 120px;
+  }
 }
 
 .road-map__title {
   @include margin-bottom(119px);
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 99px;
+  }
 }
 
 .road-map__list {
   @include list-none();
+
+  @media (max-width: $max-mobile-width) {
+    margin-left: 35px;
+  }
+}
+
+.road-map__mobile-container {
+  @media (max-width: $max-mobile-width) {
+    display: flex;
+    position: relative;
+  }
 }

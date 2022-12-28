@@ -11,8 +11,12 @@
     background-image: url("./../../public/img/horse-bg--hover.png");
   }
 
-  @media(max-width: $max-mobile-width) {
+  @media (max-width: $max-mobile-width) {
     height: 57vw;
     margin-bottom: 32px;
+  }
+
+  @media (min-width: 1440px) {
+    height: 400px;
   }
 }

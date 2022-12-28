@@ -1,9 +1,17 @@
 .team {
   margin-bottom: 160px;
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 120px;
+  }
 }
 
 .team__title {
   @include margin-bottom(48px);
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .team__list {
@@ -13,7 +21,10 @@
   gap: 40px 32px;
   width: 100%;
 
-  @media(max-width: 1000px) {
-    grid-template-columns: repeat(2, 1fr);
+  @media (max-width: $max-mobile-width) {
+    gap: 24px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }

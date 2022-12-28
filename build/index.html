@@ -20,14 +20,16 @@
 
   <header class="main-header container">
     <nav class="main-header__navigation navigation">
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">
-            <img class="navigation__logo" src="img/logo.svg" width="121" height="60" alt="Logo.">
-          </a>
-        </li>
+      <a href="#" class="navigation__link navigation__link--logo">
+        <picture>
+          <source media="(max-width: 850px)" width="96" height="48" srcset="img/logo.svg">
 
-        <ul class="navigation__links-list">
+          <img class="navigation__logo" src="img/logo.svg" width="121" height="60" alt="Logo.">
+        </picture>
+      </a>
+
+      <div class="main-header__mobile-menu-container">
+        <ul class="navigation__list main-header__mobile-menu-container-centring">
           <li class="navigation__link-item navigation__link-item--whitepaper">
             <a href="#" class="navigation__link">Whitepaper</a>
             <ul class="language-settings">
@@ -58,10 +60,21 @@
           </li>
         </ul>
 
-        <li class="navigation__item">
-          <button class="navigation__button button button--without-bg">Play Now</button>
-        </li>
-      </ul>
+        <ul class="navigation__list--mobile-buttons main-header__mobile-menu-container-centring">
+          <li class="navigation__link-item--mobile-buttons">
+            <button class="navigation__mobile-button button button--with-bg">Play Now</button>
+          </li>
+
+          <li class="navigation__link-item--mobile-buttons">
+            <button class="navigation__mobile-button button button--without-bg">NFT Market</button>
+          </li>
+        </ul>
+      </div>
+
+      <button class="navigation__button button button--without-bg">Play Now</button>
+
+      <button type="button" class="main-header__mobile-menu-button"><span class="visually-hidden">Мобильное
+          меню</span></button>
     </nav>
   </header>
 
@@ -80,19 +93,31 @@
         <div class="first-screen__crypto-exchanges crypto-exchanges">
           <ul class="crypto-exchanges__list">
             <li class="crypto-exchanges__item">
-              <img src="img/sasori.png" width="192" height="75" srcset="img/sasori@2x.png 2x" alt="Sasoripad.">
+              <picture>
+                <source media="(max-width: 850px)" srcset="img/sasori.png" width="168" height="68">
+                <img src="img/sasori.png" width="192" height="75" srcset="img/sasori@2x.png 2x" alt="Sasoripad.">
+              </picture>
             </li>
 
             <li class="crypto-exchanges__item">
-              <img src="img/binance.png" width="192" height="75" srcset="img/binance@2x.png 2x" alt="Binance.">
+              <picture>
+                <source media="(max-width: 850px)" srcset="img/binance.png" width="168" height="68">
+                <img src="img/binance.png" width="192" height="75" srcset="img/binance@2x.png 2x" alt="Binance.">
+              </picture>
             </li>
 
             <li class="crypto-exchanges__item">
-              <img src="img/solana.png" width="192" height="75" srcset="img/solana@2x.png 2x" alt="Solana.">
+              <picture>
+                <source media="(max-width: 850px)" srcset="img/solana.png" width="168" height="68">
+                <img src="img/solana.png" width="192" height="75" srcset="img/solana@2x.png 2x" alt="Solana.">
+              </picture>
             </li>
 
             <li class="crypto-exchanges__item">
-              <img src="img/wax.png" width="192" height="75" srcset="img/wax@2x.png 2x" alt="Wax.">
+              <picture>
+                <source media="(max-width: 850px)" srcset="img/wax.png" width="168" height="68">
+                <img src="img/wax.png" width="192" height="75" srcset="img/wax@2x.png 2x" alt="Wax.">
+              </picture>
             </li>
           </ul>
         </div>
@@ -101,7 +126,9 @@
 
     <section class="our-uniqueness container">
       <div class="our-uniqueness__img-container img-container">
-        <img src="img/horse.png" width="66%" srcset="img/horse@2x.png 2x" alt="Horse." class="our-uniqueness__img">
+        <picture>
+          <img src="img/horse.png" width="66%" srcset="img/horse@2x.png 2x" alt="Horse." class="our-uniqueness__img">
+        </picture>
       </div>
       <div class="our-uniqueness__text-content">
         <h2 class="our-uniqueness__title title">Radically new concept of
@@ -165,6 +192,9 @@
         </li>
 
         <li class="about-game__item">
+          <div class="about-game__img-container img-container">
+            <img src="img/dog.png" width="66%" srcset="img/dog@2x.png 2x" alt="Dog." class="about-game__img">
+          </div>
           <div class="about-game__text-content">
             <h3 class="about-game__title title">Focus on the gaming mechanics where the players can make profits for
               playing</h3>
@@ -172,9 +202,7 @@
               and some GDs to start this part of your
               adventure. There are infinite rewards hidden deep in the Galaxy.</p>
           </div>
-          <div class="about-game__img-container img-container">
-            <img src="img/dog.png" width="66%" srcset="img/dog@2x.png 2x" alt="Dog." class="about-game__img">
-          </div>
+
         </li>
 
         <li class="about-game__item">
@@ -240,54 +268,57 @@
     <section class="road-map container">
       <h2 class="road-map__title title">Roadmap</h2>
 
-      <div class="road-map__progress-bar progress-bar">
-        <div class="progress-bar__points-container">
-          <div class="progress-bar__point progress-bar__point--achieved"><span
-              class="progress-bar__point--quartal">Q1</span><span class="progress-bar__point--text">2022</span></div>
+      <div class="road-map__mobile-container">
+        <div class="road-map__progress-bar progress-bar">
+          <div class="progress-bar__points-container">
+            <div class="progress-bar__point progress-bar__point--achieved"><span
+                class="progress-bar__point--quartal">Q1</span><span class="progress-bar__point--text">2022</span></div>
 
-          <div class="progress-bar__point"><span class="progress-bar__point--quartal">Q2</span><span
-              class="progress-bar__point--text">2022</span> </div>
-          <div class="progress-bar__point"><span class="progress-bar__point--quartal">Q2</span><span
-              class="progress-bar__point--text">2022</span></div>
-          <div class="progress-bar__point"><span class="progress-bar__point--quartal">Q2</span><span
-              class="progress-bar__point--text">2022</span></div>
-          <div class="progress-bar__point"><span class="progress-bar__point--quartal">Q2</span><span
-              class="progress-bar__point--text">2022</span></div>
+            <div class="progress-bar__point"><span class="progress-bar__point--quartal">Q2</span><span
+                class="progress-bar__point--text">2022</span> </div>
+            <div class="progress-bar__point"><span class="progress-bar__point--quartal">Q2</span><span
+                class="progress-bar__point--text">2022</span></div>
+            <div class="progress-bar__point"><span class="progress-bar__point--quartal">Q2</span><span
+                class="progress-bar__point--text">2022</span></div>
+            <div class="progress-bar__point"><span class="progress-bar__point--quartal">Q2</span><span
+                class="progress-bar__point--text">2022</span></div>
 
+          </div>
+
+          <div class="progress-bar__line progress-bar__line--progress"></div>
+          <div class="progress-bar__line progress-bar__line--bg"></div>
         </div>
 
-        <div class="progress-bar__line progress-bar__line--progress"></div>
-        <div class="progress-bar__line progress-bar__line--bg"></div>
+        <div class="road-map__steps">
+          <ul class="road-map__list">
+            <li class="road-map__item step">
+              <h3 class="step__title title title--h3">Stream tournamet</h3>
+              <p class="step__text text">Pet’s Drom is strategy based NFT game where you will have to fight in the
+                universe to conquer before being conquered.
+                You'll be the chief leader (CL) of your planet where you can collect resources and trade them to
+                build,
+                research or
+                create: NFT Defenses, ships and buildings. This is a multichain game initially running on Binance,
+                Solana
+                and Wax.</p>
+              <p class="step__text text">You'll be the chief leader (CL) of your planet where you can collect
+                resources
+                and trade them to build, research or
+                create: NFT Defenses, ships and buildings. This is a multichain game initially running on Binance,
+                Solana
+                and Wax.</p>
+              <p class="step__text text">Galaxydust is a space strategy based NFT game where you will have to fight in
+                the
+                universe to conquer before being
+                conquered. You'll be the chief leader (CL) of your planet where you can collect resources and trade
+                them
+                to build,
+                research or create</p>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="road-map__steps">
-        <ul class="road-map__list">
-          <li class="road-map__item step">
-            <h3 class="step__title title title--h3">Stream tournamet</h3>
-            <p class="step__text text">Pet’s Drom is strategy based NFT game where you will have to fight in the
-              universe to conquer before being conquered.
-              You'll be the chief leader (CL) of your planet where you can collect resources and trade them to
-              build,
-              research or
-              create: NFT Defenses, ships and buildings. This is a multichain game initially running on Binance,
-              Solana
-              and Wax.</p>
-            <p class="step__text text">You'll be the chief leader (CL) of your planet where you can collect
-              resources
-              and trade them to build, research or
-              create: NFT Defenses, ships and buildings. This is a multichain game initially running on Binance,
-              Solana
-              and Wax.</p>
-            <p class="step__text text">Galaxydust is a space strategy based NFT game where you will have to fight in
-              the
-              universe to conquer before being
-              conquered. You'll be the chief leader (CL) of your planet where you can collect resources and trade
-              them
-              to build,
-              research or create</p>
-          </li>
-        </ul>
-      </div>
     </section>
 
     <section class="economy container">
@@ -322,6 +353,7 @@
       </ul>
     </section>
 
+    <!--TODO-->
     <section class="raritiens container">
       <h2 class="raritiens__title title">Raritiens</h2>
 
@@ -503,49 +535,47 @@
 
   <footer class="main-footer">
     <div class="main-footer__container container">
-      <nav class="main-header__navigation navigation">
+      <nav class="main-footer__navigation navigation">
+        <a href="#" class="navigation__link navigation__link--logo">
+          <picture>
+            <source media="(max-width: 850px)" width="96" height="48" srcset="img/logo.svg">
+
+            <img class="navigation__logo" src="img/logo.svg" width="121" height="60" alt="Logo.">
+          </picture>
+        </a>
+
         <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">
-              <img class="navigation__logo" src="img/logo.svg" width="121" height="60" alt="Logo.">
-            </a>
+          <li class="navigation__link-item navigation__link-item--whitepaper">
+            <a href="#" class="navigation__link">Whitepaper</a>
+            <ul class="language-settings">
+              <li class="language-settings__lang">
+                <button class="language-settings__button language-settings__button--active">English</button>
+              </li>
+
+              <li class="language-settings__lang">
+                <button class="language-settings__button">Russian</button>
+              </li>
+
+              <li class="language-settings__lang">
+                <button class="language-settings__button">Spanish</button>
+              </li>
+            </ul>
           </li>
 
-          <ul class="navigation__links-list">
-            <li class="navigation__link-item navigation__link-item--whitepaper">
-              <a href="#" class="navigation__link">Whitepaper</a>
-              <ul class="language-settings">
-                <li class="language-settings__lang">
-                  <button class="language-settings__button language-settings__button--active">English</button>
-                </li>
+          <li class="navigation__link-item">
+            <a href="#" class="navigation__link">Roadmap</a>
+          </li>
 
-                <li class="language-settings__lang">
-                  <button class="language-settings__button">Russian</button>
-                </li>
+          <li class="navigation__link-item">
+            <a href="#" class="navigation__link">Pets</a>
+          </li>
 
-                <li class="language-settings__lang">
-                  <button class="language-settings__button">Spanish</button>
-                </li>
-              </ul>
-            </li>
-
-            <li class="navigation__link-item">
-              <a href="#" class="navigation__link">Roadmap</a>
-            </li>
-
-            <li class="navigation__link-item">
-              <a href="#" class="navigation__link">Pets</a>
-            </li>
-
-            <li class="navigation__link-item">
-              <a href="#" class="navigation__link">Team</a>
-            </li>
-          </ul>
-
-          <li class="navigation__item">
-            <button class="navigation__button button button--without-bg">Play Now</button>
+          <li class="navigation__link-item">
+            <a href="#" class="navigation__link">Team</a>
           </li>
         </ul>
+
+        <button class="navigation__button button button--without-bg">Play Now</button>
       </nav>
 
       <p class="main-footer__text">Copyright © PET`S DROME 2022. All rights reserved.</p>

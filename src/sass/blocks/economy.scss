@@ -1,14 +1,27 @@
 .economy {
   margin-bottom: 160px;
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 120px;
+  }
 }
 
 .economy__title {
   @include margin-bottom(24px);
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 16px;
+  }
 }
 
 .economy__text {
   @include margin-bottom(48px);
   max-width: 468px;
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 40px;
+    max-width: none;
+  }
 }
 
 .economy__list {
@@ -18,7 +31,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
-  @media (max-width: 1100px) {
+  @media (max-width: $max-mobile-width) {
     flex-direction: column;
   }
 }
