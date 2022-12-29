@@ -1,20 +1,15 @@
 .progress-bar {
   margin-bottom: 32px;
   position: relative;
-
-  @media (max-width: $max-mobile-width) {
-    position: absolute;
-    left: -160px;
-    top: 125px;
-    transform: rotate(90deg);
-    width: 100%;
-  }
 }
 
 .progress-bar__points-container {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+
+  @media (min-width: $max-mobile-width) {
+    justify-content: space-between;
+  }
 }
 
 .progress-bar__line {
@@ -32,6 +27,7 @@
     position: absolute;
     bottom: 0;
     z-index: -1;
+    transition: 1s;
   }
 }
 
@@ -48,6 +44,9 @@
   color: rgba(255, 255, 255, 0.2);
   margin-bottom: 36px;
   position: relative;
+  cursor: pointer;
+  transition: 1.5s;
+  z-index: 5;
 
   &::before {
     @include defaul-pseudo-element(2px, 40px);
@@ -55,6 +54,7 @@
     bottom: -40px;
     left: 37.5px;
     z-index: -3;
+    transition: 1s;
 
     @media (max-width: $max-mobile-width) {
       transform: rotate(90deg);
@@ -73,6 +73,7 @@
     left: 27.5px;
     border: 1px solid #f7a50d;
     z-index: 5;
+    transition: 1s;
 
     @media (max-width: $max-mobile-width) {
       bottom: 10px;
@@ -122,9 +123,46 @@
       }
     }
   }
+}
 
-  @media (max-width: $max-mobile-width) {
-    transform: rotate(-90deg);
-    margin-left: 5px;
+@media (max-width: $max-mobile-width) {
+  .progress-bar {
+    position: absolute;
+    left: 16px;
+    top: 0px;
+    width: fit-content;
+  }
+
+  .progress-bar__points-container {
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .progress-bar__line {
+    height: 100%;
+    width: 2px;
+
+    &--bg {
+      position: absolute;
+      top: 5px;
+      left: -16px;
+    }
+
+    &--progress {
+      height: 15%;
+      top: 5px;
+      left: -16px;
+      background: linear-gradient(180deg, #f7a50d 0%, #f7de0d 100%);
+    }
+  }
+
+  .progress-bar__point {
+    &:not(:last-child) {
+      margin-bottom: 80px;
+    }
+
+    &:first-child {
+      margin-bottom: 862px;
+    }
   }
 }

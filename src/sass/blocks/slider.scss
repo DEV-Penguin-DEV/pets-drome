@@ -1,8 +1,13 @@
+.slider {
+  min-height: 31vw;
+}
+
 .slider__list {
   @include list-none();
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
 }
 
 .slider__item {
@@ -13,7 +18,7 @@
 
   &:hover {
     opacity: 0.4;
-    transform: scale(1.125);
+    transform: scale(1.1);
 
     & > .slider__img-container > .slider__img {
       opacity: 0.8;
@@ -30,6 +35,12 @@
   &--active {
     width: 44%;
     opacity: 1;
+
+    @media (min-width: $max-mobile-width) {
+      & .slider__img-container {
+        height: 27vw;
+      }
+    }
 
     @media (max-width: $max-mobile-width) {
       display: block;
@@ -61,6 +72,10 @@
 
 .slider__img-container {
   margin-bottom: 24px;
+
+  @media (min-width: $max-mobile-width) {
+    height: 16.6vw;
+  }
 
   @media (max-width: $max-mobile-width) {
     margin-bottom: 32px;
