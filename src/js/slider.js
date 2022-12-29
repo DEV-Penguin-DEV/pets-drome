@@ -7,7 +7,16 @@ const sliderItems = document.querySelectorAll('.slider__item');
 const controlersContainerElement = document.querySelector('.slider__menu-list');
 const controlers = document.querySelectorAll('.slider__menu-button');
 
-// TODO
+const putActiveMidlleSameActions = (slide, i) => {
+  slide.classList.add('slider__item--shown');
+  sliderItems[(sliderItems.length - 1) !== i ? (i + 1) : 0].classList.add('slider__item--shown');
+  sliderItems[0 !== i ? (i - 1) : (sliderItems.length - 1)].classList.add('slider__item--shown');
+
+  slide.style.order = 1;
+  sliderItems[(sliderItems.length - 1) !== i ? (i + 1) : 0].style.order = 2;
+  sliderItems[0 !== i ? (i - 1) : (sliderItems.length - 1)].style.order = -1;
+};
+
 const putActiveMidlle = (isButton) => {
   if (isButton) {
     controlers.forEach((controler, i) => {
@@ -20,13 +29,8 @@ const putActiveMidlle = (isButton) => {
         sliderItems.forEach((img) => {
           img.classList.remove('slider__item--shown');
         });
-        sliderItems[i].classList.add('slider__item--shown');
-        sliderItems[(sliderItems.length - 1) !== i ? (i + 1) : 0].classList.add('slider__item--shown');
-        sliderItems[0 !== i ? (i - 1) : (sliderItems.length - 1)].classList.add('slider__item--shown');
 
-        sliderItems[i].style.order = 1;
-        sliderItems[(sliderItems.length - 1) !== i ? (i + 1) : 0].style.order = 2;
-        sliderItems[0 !== i ? (i - 1) : (sliderItems.length - 1)].style.order = -1;
+        putActiveMidlleSameActions(sliderItems[i], i);
       }
     });
   } else {
@@ -35,13 +39,8 @@ const putActiveMidlle = (isButton) => {
         sliderItems.forEach((img) => {
           img.classList.remove('slider__item--shown');
         });
-        slide.classList.add('slider__item--shown');
-        sliderItems[(sliderItems.length - 1) !== i ? (i + 1) : 0].classList.add('slider__item--shown');
-        sliderItems[0 !== i ? (i - 1) : (sliderItems.length - 1)].classList.add('slider__item--shown');
 
-        slide.style.order = 1;
-        sliderItems[(sliderItems.length - 1) !== i ? (i + 1) : 0].style.order = 2;
-        sliderItems[0 !== i ? (i - 1) : (sliderItems.length - 1)].style.order = -1;
+        putActiveMidlleSameActions(slide, i);
 
         controlers.forEach((controler) => {
           controler.classList.remove('slider__menu-button--active');
