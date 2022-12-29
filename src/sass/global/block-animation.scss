@@ -1,0 +1,8 @@
+.block-animation {
+  opacity: 0;
+  transition: 2s;
+
+  &--active {
+    opacity: 1;
+  }
+}

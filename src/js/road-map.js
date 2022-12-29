@@ -2,6 +2,8 @@ const pointsElements = document.querySelectorAll('.progress-bar__point');
 const stepsElements = document.querySelectorAll('.step');
 const progressBarElement = document.querySelector('.progress-bar__line--progress');
 const mediaQuery = window.matchMedia('(max-width: 850px)');
+const roadMapContainerElement = document.querySelector('.road-map__mobile-container');
+const roadMapElement = document.querySelector('.road-map');
 
 const onPoinstClick = (i) => {
   const pointElement = pointsElements[i];
@@ -35,7 +37,8 @@ const onPoinstClick = (i) => {
           }
         });
       }
-
+      roadMapElement.style.paddingBottom = '0px';
+      roadMapContainerElement.style.minHeight = `${progressBarElement.parentNode.clientHeight}px`;
       if (i === 0) {
         stepElement.style.marginTop = '59px';
       } else {

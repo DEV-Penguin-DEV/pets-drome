@@ -4,6 +4,12 @@
   @media (max-width: $max-mobile-width) {
     padding-top: 12px;
   }
+
+  & .main-header__navigation {
+    @media (max-width: $max-mobile-width) {
+      z-index: 6;
+    }
+  }
 }
 
 .main-header__mobile-menu-button {
