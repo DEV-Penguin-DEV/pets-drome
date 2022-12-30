@@ -38,7 +38,6 @@ const onPoinstClick = (i) => {
         });
       }
       roadMapElement.style.paddingBottom = '120px';
-      console.log(progressBarElement.parentNode.clientHeight);
       roadMapContainerElement.style.minHeight = `${progressBarElement.parentNode.clientHeight}px`;
       if (i === 0) {
         stepElement.style.marginTop = '59px';

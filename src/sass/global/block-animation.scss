@@ -1,8 +1,10 @@
 .block-animation {
-  opacity: 0;
-  transition: 1.5s;
+  @media (max-width: $max-mobile-width) {
+    opacity: 0;
+    transition: 1.5s;
 
-  &--active {
-    opacity: 1;
+    &--active {
+      opacity: 1;
+    }
   }
 }
