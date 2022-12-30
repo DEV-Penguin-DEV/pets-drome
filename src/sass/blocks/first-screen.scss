@@ -1,25 +1,30 @@
 .first-screen {
-  padding: 90px 0 84px 0;
+  padding: 182px 0 84px 0;
+  position: fixed;
+  width: 100vw;
+  top: 10px;
+  z-index: -10;
 
-  @media(max-width: $max-mobile-width) {
+  @media (max-width: $max-mobile-width) {
     padding: 95px 0 125px 0;
+    position: relative;
+    top: -2px;
   }
 
   &::before {
-    @include defaul-pseudo-element(100%, 63.26vw);
+    @include defaul-pseudo-element(100vw, 63.26vw);
     background: url("./../../public/img/first-screen-bg.png") no-repeat center
       center;
-    background-size: contain;
+    background-size: cover;
     left: 0;
-    top: -10px;
+    top: -50px;
     z-index: -2;
-    max-height: 1012px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("./../../public/img/first-screen-bg@2x.png");
     }
 
-    @media(max-width: $max-mobile-width) {
+    @media (max-width: $max-mobile-width) {
       height: 812px;
       background-image: url("./../../public/img/first-screen-bg--mobile.png");
       background-size: cover;
@@ -41,7 +46,7 @@
 
   @include margin-bottom(16px);
 
-  @media(max-width: $max-mobile-width) {
+  @media (max-width: $max-mobile-width) {
     font-size: 14px;
   }
 }
@@ -59,7 +64,7 @@
 
   @include margin-bottom(32px);
 
-  @media(max-width: $max-mobile-width) {
+  @media (max-width: $max-mobile-width) {
     max-width: none;
     font-size: 45px;
   }
@@ -68,7 +73,7 @@
 .first-screen__buttons-container {
   margin-bottom: 240px;
 
-  @media(max-width: $max-mobile-width) {
+  @media (max-width: $max-mobile-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2.3%;
@@ -84,7 +89,7 @@
     margin-right: 16px;
   }
 
-  @media(max-width: $max-mobile-width) {
+  @media (max-width: $max-mobile-width) {
     padding: 16px 0;
     margin: 0;
     width: 100%;

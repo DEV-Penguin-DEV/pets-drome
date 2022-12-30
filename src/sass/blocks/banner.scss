@@ -4,12 +4,10 @@
   background: linear-gradient(180deg, #f7de0d 3.5%, #f7a50d 100%);
   box-shadow: inset 0px -8px 16px rgba(255, 255, 255, 0.5),
     inset 0px 8px 16px rgba(163, 122, 8, 0.5);
-  margin-bottom: 160px;
 
   @media (max-width: $max-mobile-width) {
     padding: 80px 0;
     text-align: left;
-    margin-bottom: 120px;
   }
 }
 

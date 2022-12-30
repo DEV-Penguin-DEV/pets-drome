@@ -1,0 +1,6 @@
+.bg {
+  &--blue {
+    background: $main-bg-color;
+    z-index: 10;
+  }
+}

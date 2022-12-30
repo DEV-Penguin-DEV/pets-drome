@@ -4,7 +4,6 @@
 }
 
 .progress-bar__points-container {
-  width: 100%;
   display: flex;
 
   @media (min-width: $max-mobile-width) {
@@ -18,7 +17,7 @@
 
   &--bg {
     background: rgba(255, 255, 255, 0.3);
-    z-index: -2;
+    z-index: 0;
   }
 
   &--progress {
@@ -26,7 +25,7 @@
     width: 15%;
     position: absolute;
     bottom: 0;
-    z-index: -1;
+    z-index: 0;
     transition: 1s;
   }
 }
@@ -134,7 +133,6 @@
   }
 
   .progress-bar__points-container {
-    height: 100%;
     flex-direction: column;
   }
 
@@ -159,10 +157,6 @@
   .progress-bar__point {
     &:not(:last-child) {
       margin-bottom: 80px;
-    }
-
-    &:first-child {
-      margin-bottom: 862px;
     }
   }
 }

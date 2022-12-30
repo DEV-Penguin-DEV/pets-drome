@@ -4,19 +4,17 @@
   gap: 32px;
   grid-template-columns: 1fr 1fr;
 
-  margin-bottom: 263px;
-
   @media (max-width: $max-mobile-width) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 0;
     padding-top: 0;
-    margin-bottom: 120px;
   }
 
   @media (min-width: $max-mobile-width) {
     align-items: center;
+    padding-bottom: 263px;
   }
 }
 

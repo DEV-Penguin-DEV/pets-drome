@@ -9,4 +9,4 @@ startMobileMenu();
 startSlider();
 startFaq();
 startRoadMap();
-startAnimation();
+// startAnimation();

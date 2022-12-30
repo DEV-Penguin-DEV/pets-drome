@@ -1,11 +1,3 @@
-.faq {
-  margin-bottom: 160px;
-
-  @media (max-width: $max-mobile-width) {
-    margin-bottom: 120px;
-  }
-}
-
 .faq__list {
   @include list-none();
 }

@@ -1,11 +1,3 @@
-.about-game {
-  margin-bottom: 160px;
-
-  @media (min-width: $max-mobile-width) {
-    margin-bottom: 120px;
-  }
-}
-
 .about-game__list {
   @include list-none();
 }
@@ -15,7 +7,10 @@
   gap: 32px;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  margin-bottom: 160px;
+
+  &:not(:last-child) {
+    margin-bottom: 160px;
+  }
 
   @media (min-width: $max-mobile-width) {
     margin-bottom: 80px;
@@ -31,7 +26,10 @@
     justify-content: center;
     gap: 0;
     padding-top: 0;
-    margin-bottom: 120px;
+
+    &:not(:last-child) {
+      margin-bottom: 120px;
+    }
   }
 }
 

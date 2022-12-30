@@ -33,7 +33,7 @@ const Visible = function (target) {
 };
 
 export const startAnimation = () => {
-  window.addEventListener('scroll', () => Visible(blockElements[0]));
+  Visible(blockElements[0]);
   blockElements.forEach((block, i) => {
     if (i > 0) {
       window.addEventListener('scroll', () => Visible(block));

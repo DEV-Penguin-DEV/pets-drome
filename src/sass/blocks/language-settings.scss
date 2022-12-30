@@ -30,11 +30,22 @@
   cursor: pointer;
   position: relative;
 
-  &--active {
+  &:hover {
     &::before {
-      @include defaul-pseudo-element(100%, 2px);
+      transition: 0.7s;
+      animation: hover-animation 0.55s forwards;
+      @include defaul-pseudo-element(0%, 2px);
       bottom: 0px;
       background-color: #ffffff;
     }
+  }
+}
+
+@keyframes hover-animation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }

@@ -29,15 +29,16 @@ const onPoinstClick = (i) => {
 
     if (mediaQuery.matches) {
       if (pointsElements[pointsElements.length - 1].classList.contains('progress-bar__point--achieved')) {
-        pointsElements[pointsElements.length - 1].style.marginBottom = `${220 + stepElement.scrollHeight}px`;
+        pointsElements[pointsElements.length - 1].style.marginBottom = `${150 + stepElement.scrollHeight}px`;
       } else {
         pointsElements.forEach((point, pointIndex) => {
           if (point.classList.contains('progress-bar__point--achieved') && !pointsElements[pointIndex + 1].classList.contains('progress-bar__point--achieved')) {
-            point.style.marginBottom = `${220 + stepElement.scrollHeight}px`;
+            point.style.marginBottom = `${150 + stepElement.scrollHeight}px`;
           }
         });
       }
-      roadMapElement.style.paddingBottom = '0px';
+      roadMapElement.style.paddingBottom = '120px';
+      console.log(progressBarElement.parentNode.clientHeight);
       roadMapContainerElement.style.minHeight = `${progressBarElement.parentNode.clientHeight}px`;
       if (i === 0) {
         stepElement.style.marginTop = '59px';
@@ -60,6 +61,12 @@ const onPoinstClick = (i) => {
 };
 
 export const startRoadMap = () => {
+  if (mediaQuery.matches) {
+    roadMapContainerElement.style.minHeight = `${progressBarElement.parentNode.clientHeight}px`;
+
+    pointsElements[0].style.marginBottom = `${150 + stepsElements[0].scrollHeight}px`;
+  }
+
   pointsElements.forEach((point, i) => {
     point.addEventListener('click', () => onPoinstClick(i));
   });

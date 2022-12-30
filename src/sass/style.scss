@@ -1,5 +1,6 @@
 @import "global/visually-hidden.scss";
 @import "global/variables.scss";
+@import "global/bg.scss";
 @import "global/impurities.scss";
 @import "global/container.scss";
 @import "global/title.scss";
@@ -7,7 +8,8 @@
 @import "global/button.scss";
 @import "global/text.scss";
 @import "global/img-container.scss";
-@import "global/block-animation.scss";
+@import "global/block.scss";
+// @import "global/block-animation.scss";
 
 @import "blocks/main-header.scss";
 @import "blocks/navigation.scss";

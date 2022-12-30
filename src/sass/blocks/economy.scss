@@ -1,11 +1,3 @@
-.economy {
-  margin-bottom: 160px;
-
-  @media (max-width: $max-mobile-width) {
-    margin-bottom: 120px;
-  }
-}
-
 .economy__title {
   @include margin-bottom(24px);
 

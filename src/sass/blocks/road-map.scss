@@ -1,10 +1,7 @@
 .road-map {
-  margin-bottom: 160px;
-
   @media (max-width: $max-mobile-width) {
-    padding-bottom: 482px;
+    padding-bottom: 500px;
     height: max-content;
-    margin-bottom: 120px;
   }
 }
 
