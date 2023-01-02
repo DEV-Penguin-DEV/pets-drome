@@ -5,6 +5,10 @@
   top: 10px;
   z-index: -10;
 
+  @media (max-width: 1440px) {
+    padding-top: 10vw;
+  }
+
   @media (max-width: $max-mobile-width) {
     padding: 95px 0 125px 0;
     position: relative;
@@ -17,7 +21,7 @@
       center;
     background-size: cover;
     left: 0;
-    top: -50px;
+    top: -60px;
     z-index: -2;
 
     @media (min-resolution: 2dppx) {
@@ -72,6 +76,10 @@
 
 .first-screen__buttons-container {
   margin-bottom: 240px;
+
+  @media (max-width: 1440px) {
+    margin-bottom: 10.5vw;
+  }
 
   @media (max-width: $max-mobile-width) {
     display: grid;

@@ -1,10 +1,125 @@
+.cloud-container {
+  position: relative;
+  height: 0;
+  width: 100vw;
+
+  @media (max-width: $max-mobile-width) {
+    display: none;
+  }
+}
+
+.cloud {
+  position: absolute;
+  z-index: 0;
+  animation: cloud-animation--right-to-left 8s infinite both linear;
+
+  &--left-to-right {
+    animation: cloud-animation--left-to-right 8s infinite both linear;
+
+    &-speed {
+      animation-duration: 8s;
+    }
+  }
+
+  &--right-to-left {
+    animation: cloud-animation--right-to-left 9s infinite both linear;
+  }
+
+  &--litle {
+    animation-duration: 12s;
+  }
+
+  &--1 {
+    top: 55px;
+  }
+
+  &--2 {
+    top: 105px;
+
+    animation: cloud-animation--left-to-right 10s infinite both linear;
+  }
+
+  &--3 {
+    top: -125px;
+  }
+
+  &--4 {
+    top: 105px;
+    animation: cloud-animation--left-to-right 10s infinite both linear;
+  }
+
+  &--5 {
+    top: -105px;
+  }
+
+  &--6 {
+    top: -805px;
+  }
+
+  &--7 {
+    top: -705px;
+    animation: cloud-animation--left-to-right 10s infinite both linear;
+  }
+
+  &--8 {
+    top: 50px;
+  }
+
+  &--9 {
+    top: -135px;
+  }
+
+  &--10 {
+    top: -130px;
+  }
+
+  &--11 {
+    top: 0px;
+  }
+
+  &--12 {
+    top: -100px;
+  }
+
+  &--13 {
+    top: -50px;
+  }
+}
+
 .block-animation {
   @media (max-width: $max-mobile-width) {
     opacity: 0;
-    transition: 1.5s;
+    transition: 1.75s;
 
     &--active {
       opacity: 1;
     }
+  }
+}
+
+@keyframes cloud-animation {
+  from {
+    left: -650px;
+  }
+  to {
+    left: 110vw;
+  }
+}
+
+@keyframes cloud-animation--left-to-right {
+  from {
+    left: -650px;
+  }
+  to {
+    left: 110vw;
+  }
+}
+
+@keyframes cloud-animation--right-to-left {
+  from {
+    right: -650px;
+  }
+  to {
+    right: 110vw;
   }
 }

@@ -1,4 +1,6 @@
 const blockElements = document.querySelectorAll('.block-animation');
+const cloudElements = document.querySelectorAll('.cloud');
+const mediaQuery = window.matchMedia('(max-width: 850px)');
 
 const Visible = function (target) {
   // Все позиции элемента
@@ -33,10 +35,14 @@ const Visible = function (target) {
 };
 
 export const startAnimation = () => {
-  Visible(blockElements[0]);
-  blockElements.forEach((block, i) => {
-    if (i > 0) {
+  if (mediaQuery.matches) {
+    Visible(blockElements[0]);
+    blockElements.forEach((block) => {
       window.addEventListener('scroll', () => Visible(block));
-    }
-  });
+    });
+  } else {
+    cloudElements.forEach((cloud) => {
+      window.addEventListener('scroll', () => Visible(cloud));
+    });
+  }
 };

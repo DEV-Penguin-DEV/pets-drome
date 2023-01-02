@@ -1,4 +1,5 @@
 .block {
+  z-index: 8;
   padding-bottom: 160px;
 
   @media (max-width: $max-mobile-width) {

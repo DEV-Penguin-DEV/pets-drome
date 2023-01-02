@@ -1,5 +1,6 @@
 .bg {
   &--blue {
+    overflow: hidden;
     background: $main-bg-color;
     z-index: 10;
   }

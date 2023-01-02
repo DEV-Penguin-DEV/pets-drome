@@ -6,6 +6,7 @@
   border-radius: 60px;
   padding: 40px;
   box-sizing: border-box;
+  z-index: 5;
 
   @media (max-width: $max-mobile-width) {
     width: 100%;
