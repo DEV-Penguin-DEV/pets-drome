@@ -7,6 +7,7 @@
   min-width: 137px;
   height: 0;
   transition: 1s;
+  transition-delay: 0.4s;
   top: 32px;
   z-index: 1;
 }
@@ -24,7 +25,8 @@
   font-weight: 600;
   font-size: 0;
   line-height: 0;
-  transition: 1s;
+  transition: 0.3s;
+  transition-delay: 0s;
 
   color: #ffffff;
   cursor: pointer;
@@ -32,7 +34,6 @@
 
   &:hover {
     &::before {
-      transition: 0.7s;
       animation: hover-animation 0.55s forwards;
       @include defaul-pseudo-element(0%, 2px);
       bottom: 0px;

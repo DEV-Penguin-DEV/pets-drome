@@ -37,8 +37,10 @@ const Visible = function (target) {
 export const startAnimation = () => {
   if (mediaQuery.matches) {
     Visible(blockElements[0]);
-    blockElements.forEach((block) => {
-      window.addEventListener('scroll', () => Visible(block));
+    blockElements.forEach((block, i) => {
+      if(i > 0) {
+        window.addEventListener('scroll', () => Visible(block));
+      }
     });
   } else {
     cloudElements.forEach((cloud) => {
