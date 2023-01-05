@@ -2,6 +2,7 @@
   &--blue {
     overflow: hidden;
     background: $main-bg-color;
-    z-index: 10;
+    z-index: 1;
+    position: relative;
   }
 }

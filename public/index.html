@@ -1,26 +1,698 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;600&family=Titan+One&display=swap"
-      rel="stylesheet">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;600&family=Titan+One&display=swap');
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;600&family=Titan+One&display=swap"
+    rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;600&family=Titan+One&display=swap');
+  </style>
+  <title>PET'S DROME</title>
+</head>
 
-    </style>
-    <title>PET'S DROME</title>
-  </head>
+<body class="page">
+  <h1 class="page__title visually-hidden">PET'S DROME</h1>
 
-  <body class="page">
-    <h1 class="page__title visually-hidden">PET'S DROME</h1>
+  <header class="main-header container">
+    <nav class="main-header__navigation container navigation">
+      <a href="#" class="navigation__link navigation__link--logo">
+        <picture>
+          <source media="(max-width: 850px)" width="96" height="48" srcset="img/logo.svg">
 
-    <header class="main-header container">
-      <nav class="main-header__navigation container navigation">
+          <img class="navigation__logo" src="img/logo.svg" width="121" height="60" alt="Logo.">
+        </picture>
+      </a>
+
+      <div class="main-header__mobile-menu-container">
+        <ul class="navigation__list main-header__mobile-menu-container-centring">
+          <li class="navigation__link-item navigation__link-item--whitepaper">
+            <a href="#" class="navigation__link">Whitepaper</a>
+            <ul class="language-settings">
+              <li class="language-settings__lang">
+                <button class="language-settings__button language-settings__button--active">English</button>
+              </li>
+
+              <li class="language-settings__lang">
+                <button class="language-settings__button">Russian</button>
+              </li>
+
+              <li class="language-settings__lang">
+                <button class="language-settings__button">Spanish</button>
+              </li>
+            </ul>
+          </li>
+
+          <li class="navigation__link-item">
+            <a href="#" class="navigation__link">Roadmap</a>
+          </li>
+
+          <li class="navigation__link-item">
+            <a href="#" class="navigation__link">Pets</a>
+          </li>
+
+          <li class="navigation__link-item">
+            <a href="#" class="navigation__link">Team</a>
+          </li>
+        </ul>
+
+        <ul class="navigation__list--mobile-buttons main-header__mobile-menu-container-centring">
+          <li class="navigation__link-item--mobile-buttons">
+            <button class="navigation__mobile-button button button--with-bg">Play Now</button>
+          </li>
+
+          <li class="navigation__link-item--mobile-buttons">
+            <button class="navigation__mobile-button button button--without-bg">NFT Market</button>
+          </li>
+        </ul>
+      </div>
+
+      <button class="navigation__button button button--without-bg">Play Now</button>
+
+      <button type="button" class="main-header__mobile-menu-button"><span class="visually-hidden">Мобильное
+          меню</span></button>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <section class="first-screen block-animation">
+      <div class="first-screen__container container">
+        <h2 class="first-screen__title">Welcome to the world of PET`s DROMe</h2>
+        <p class="first-screen__text">More than play
+          & earn environment NFT game</p>
+
+        <div class="first-screen__buttons-container">
+          <button class="first-screen__button button button--with-bg">Play Now</button>
+          <button class="first-screen__button button button--without-bg">NFT Market</button>
+        </div>
+
+        <div class="first-screen__crypto-exchanges crypto-exchanges">
+          <ul class="crypto-exchanges__list">
+            <li class="crypto-exchanges__item">
+              <picture>
+                <source media="(max-width: 850px)" srcset="img/sasori.png" width="168" height="68">
+                <img src="img/sasori.png" width="192" height="75" srcset="img/sasori@2x.png 2x" alt="Sasoripad.">
+              </picture>
+            </li>
+
+            <li class="crypto-exchanges__item">
+              <picture>
+                <source media="(max-width: 850px)" srcset="img/binance.png" width="168" height="68">
+                <img src="img/binance.png" width="192" height="75" srcset="img/binance@2x.png 2x" alt="Binance.">
+              </picture>
+            </li>
+
+            <li class="crypto-exchanges__item">
+              <picture>
+                <source media="(max-width: 850px)" srcset="img/solana.png" width="168" height="68">
+                <img src="img/solana.png" width="192" height="75" srcset="img/solana@2x.png 2x" alt="Solana.">
+              </picture>
+            </li>
+
+            <li class="crypto-exchanges__item">
+              <picture>
+                <source media="(max-width: 850px)" srcset="img/wax.png" width="168" height="68">
+                <img src="img/wax.png" width="192" height="75" srcset="img/wax@2x.png 2x" alt="Wax.">
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg--blue">
+      <div class="cloud-container cloud-container--cloud--right-to-left">
+        <img src="img/cloud--right-to-left.svg" alt="" width="490" height="108" aria-hidden="true"
+          class="cloud cloud--1 cloud--right-to-left">
+      </div>
+
+      <div class="cloud-container cloud-container--litle">
+        <img src="img/cloud--litle.svg" alt="" aria-hidden="true" width="87" height="55.75"
+          class="cloud cloud--2 cloud--litle">
+      </div>
+
+      <section class="our-uniqueness container block-animation  block">
+        <div class="our-uniqueness__img-container img-container">
+          <picture>
+            <img src="img/horse.png" width="66%" srcset="img/horse@2x.png 2x" alt="Horse." class="our-uniqueness__img">
+          </picture>
+        </div>
+        <div class="our-uniqueness__text-content">
+          <h2 class="our-uniqueness__title title">Radically new concept of
+            a gameplay where everything you own you actually own</h2>
+          <p class="our-uniqueness__text text">Because is a new concept of a game and a gameplay where everything you
+            own
+            you
+            actually own it inside and outside of the game servers with multiblockchain autenthication NFT
+            technologies
+            to
+            back your digital assets up.</p>
+        </div>
+      </section>
+
+      <div class="cloud-container cloud-container--left-to-right-speed">
+        <img src="img/cloud--left-to-right-speed.svg" alt="" aria-hidden="true" width="289" height="96"
+          class="cloud cloud--3 cloud--left-to-right cloud--left-to-right-speed">
+      </div>
+
+      <div class="cloud-container cloud-container--cloud">
+        <img src="img/cloud.svg" alt="" aria-hidden="true" width="463" height="164" class="cloud cloud--4 cloud--cloud">
+      </div>
+
+      <section class="our-benefits container block-animation  block">
+        <h2 class="our-benefits__title title">Outside of the game with multiblockchain autenthication NFT technologies
+          to back your digital assets up</h2>
+
+        <ul class="our-benefits__list">
+          <li class="our-benefits__item benefit">
+            <img class="benefit__img" width="56" height="56" src="img/pd-token.svg" alt="PD-token.">
+            <h3 class="benefit__title">PD Token</h3>
+            <p class="benefit__text text">This is our in-game token, which is always 1:1 with USD. Thus allowing
+              nothing
+              to
+              be affected by the trade. And we will ensure everyone's liquidity.</p>
+          </li>
+
+          <li class="our-benefits__item benefit">
+            <img class="benefit__img" width="56" height="56" src="img/multichain.svg" alt="Multichain.">
+            <h3 class="benefit__title">Multichain</h3>
+            <p class="benefit__text text">Multichain technology allows us to access the game from several
+              decentralized
+              networks with the aim of facilitating access to the player.</p>
+          </li>
+
+          <li class="our-benefits__item benefit">
+            <img class="benefit__img" width="56" height="56" src="img/daos.svg" alt="DAOs.">
+            <h3 class="benefit__title">DAOs</h3>
+            <p class="benefit__text text">They will decide the future aspects of our metaverse, voting on political
+              changes,
+              economic endeavors, and even the game's content design.</p>
+          </li>
+        </ul>
+      </section>
+
+      <div class="cloud-container cloud-container--litle">
+        <img src="img/cloud--litle.svg" alt="" aria-hidden="true" width="87" height="55.75"
+          class="cloud cloud--5 cloud--litle">
+      </div>
+
+      <section class="about-game container block-animation  block">
+        <h2 class="about-game visually-hidden">About game</h2>
+
+        <ul class="about-game__list">
+          <li class="about-game__item">
+            <div class="about-game__img-container img-container">
+              <img src="img/horse.png" width="66%" srcset="img/horse@2x.png 2x" alt="Horse." class="about-game__img">
+            </div>
+            <div class="about-game__text-content">
+              <h3 class="about-game__title title">Create passive income insidePET’S DROM with outside assets</h3>
+              <p class="about-game__text text">These are NFTs structures that produce materials passively and an
+                employee can be chosen to manage the structure and
+                create passive profits for the owner. The basic mining structures will produce around 8% of their
+                original
+                price in
+                resources (metal or crystal).</p>
+            </div>
+          </li>
+
+          <li class="about-game__item">
+            <div class="about-game__img-container img-container">
+              <img src="img/dog.png" width="66%" srcset="img/dog@2x.png 2x" alt="Dog." class="about-game__img">
+            </div>
+            <div class="about-game__text-content">
+              <h3 class="about-game__title title">Focus on the gaming mechanics where the players can make profits for
+                playing</h3>
+              <p class="about-game__text text">All you need for the standard explorations is to own at least one ship
+                and some GDs to start this part of your
+                adventure. There are infinite rewards hidden deep in the Galaxy.</p>
+            </div>
+
+          </li>
+
+          <li class="about-game__item">
+            <div class="about-game__img-container img-container">
+              <img src="img/snail.png" width="66%" srcset="img/snail@2x.png 2x" alt="Snail." class="about-game__img">
+            </div>
+            <div class="about-game__text-content">
+              <h3 class="about-game__title title">Never was so fun to play!</h3>
+              <p class="about-game__text text">These are NFTs structures that produce materials passively and an
+                employee can be chosen to manage the structure and
+                create passive profits for the owner. The basic mining structures will produce around 8% of their
+                original
+                price in
+                resources (metal or crystal).</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <div class="cloud-container cloud-container--right-to-left">
+        <img src="img/cloud--right-to-left.svg" alt="" aria-hidden="true" width="491" height="108"
+          class="cloud cloud--6 cloud--right-to-left">
+      </div>
+
+      <div class="cloud-container cloud-container--litle">
+        <img src="img/cloud--litle.svg" alt="" aria-hidden="true" width="87" height="55.75"
+          class="cloud cloud--7 cloud--litle">
+      </div>
+
+      <section class="banner block-animation  block">
+        <div class="banner__container container">
+          <h2 class="banner__title">No Ponzi schemes like most NFT games</h2>
+          <p class="banner__text text text--white">These are NFTs structures that produce materials passively and an
+            employee
+            can be chosen
+            to manage the structure and
+            create passive profits for the owner. The basic mining structures will produce around 8% of their original
+            price in
+            resources (metal or crystal).</p>
+        </div>
+      </section>
+
+      <div class="cloud-container cloud-container--litle">
+        <img src="img/cloud--litle.svg" alt="" aria-hidden="true" width="87" height="55.75"
+          class="cloud cloud--8 cloud--litle">
+      </div>
+
+      <section class="we-guarantee container block-animation  block">
+        <h2 class="we-guarantee__title title">We-guarantee</h2>
+
+        <ul class="we-guarantee__list">
+          <li class="we-guarantee__item benefit">
+            <img class="benefit__img" width="56" height="56" src="img/pd-token.svg" alt="PD-token.">
+            <h3 class="benefit__title">PD Token</h3>
+            <p class="benefit__text text">This is our in-game token, which is always 1:1 with USD. Thus allowing
+              nothing
+              to
+              be affected by the trade. And we will ensure everyone's liquidity.</p>
+          </li>
+
+          <li class="we-guarantee__item benefit">
+            <img class="benefit__img" width="56" height="56" src="img/multichain.svg" alt="Multichain.">
+            <h3 class="benefit__title">Multichain</h3>
+            <p class="benefit__text text">Multichain technology allows us to access the game from several
+              decentralized
+              networks with the aim of facilitating access to the player.</p>
+          </li>
+
+          <li class="we-guarantee__item benefit">
+            <img class="benefit__img" width="56" height="56" src="img/daos.svg" alt="DAOs.">
+            <h3 class="benefit__title">DAOs</h3>
+            <p class="benefit__text text">They will decide the future aspects of our metaverse, voting on political
+              changes,
+              economic endeavors, and even the game's content design.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="road-map container block-animation  block">
+        <h2 class="road-map__title title">Roadmap</h2>
+
+        <div class="road-map__mobile-container">
+          <div class="road-map__progress-bar progress-bar">
+            <div class="progress-bar__points-container">
+              <div class="progress-bar__point progress-bar__point--achieved"><span
+                  class="progress-bar__point--quartal">Q1</span><span class="progress-bar__point--text">2022</span>
+              </div>
+
+              <div class="progress-bar__point"><span class="progress-bar__point--quartal">Q2</span><span
+                  class="progress-bar__point--text">2022</span> </div>
+              <div class="progress-bar__point"><span class="progress-bar__point--quartal">Q2</span><span
+                  class="progress-bar__point--text">2022</span></div>
+              <div class="progress-bar__point"><span class="progress-bar__point--quartal">Q2</span><span
+                  class="progress-bar__point--text">2022</span></div>
+              <div class="progress-bar__point"><span class="progress-bar__point--quartal">Q2</span><span
+                  class="progress-bar__point--text">2022</span></div>
+
+            </div>
+
+            <div class="progress-bar__line progress-bar__line--progress"></div>
+            <div class="progress-bar__line progress-bar__line--bg"></div>
+          </div>
+
+          <div class="road-map__steps">
+            <ul class="road-map__list">
+              <li class="road-map__item step step--active">
+                <h3 class="step__title title title--h3">Stream tournamet</h3>
+                <p class="step__text text">Pet’s Drom is strategy based NFT game where you will have to fight in the
+                  universe to conquer before being conquered.
+                  You'll be the chief leader (CL) of your planet where you can collect resources and trade them to
+                  build,
+                  research or
+                  create: NFT Defenses, ships and buildings. This is a multichain game initially running on Binance,
+                  Solana
+                  and Wax.</p>
+                <p class="step__text text">You'll be the chief leader (CL) of your planet where you can collect
+                  resources
+                  and trade them to build, research or
+                  create: NFT Defenses, ships and buildings. This is a multichain game initially running on Binance,
+                  Solana
+                  and Wax.</p>
+                <p class="step__text text">Galaxydust is a space strategy based NFT game where you will have to fight
+                  in
+                  the
+                  universe to conquer before being
+                  conquered. You'll be the chief leader (CL) of your planet where you can collect resources and trade
+                  them
+                  to build,
+                  research or create</p>
+              </li>
+
+              <li class="road-map__item step">
+                <h3 class="step__title title title--h3">Stream tournamet</h3>
+                <p class="step__text text">Pet’s Drom is strategy based NFT game where you will have to fight in the
+                  universe to conquer before being conquered.
+                  You'll be the chief leader (CL) of your planet where you can collect resources and trade them to
+                  build,
+                  research or
+                  create: NFT Defenses, ships and buildings. This is a multichain game initially running on Binance,
+                  Solana
+                  and Wax.</p>
+                <p class="step__text text">You'll be the chief leader (CL) of your planet where you can collect
+                  resources
+                  and trade them to build, research or
+                  create: NFT Defenses, ships and buildings. This is a multichain game initially running on Binance,
+                  Solana
+                  and Wax.</p>
+              </li>
+
+              <li class="road-map__item step">
+                <h3 class="step__title title title--h3">Stream tournamet</h3>
+                <p class="step__text text">Pet’s Drom is strategy based NFT game where you will have to fight in the
+                  universe to conquer before being conquered.
+                  You'll be the chief leader (CL) of your planet where you can collect resources and trade them to
+                  build,
+                  research or
+                  create: NFT Defenses, ships and buildings. This is a multichain game initially running on Binance,
+                  Solana
+                  and Wax.</p>
+                <p class="step__text text">Galaxydust is a space strategy based NFT game where you will have to fight
+                  in
+                  the
+                  universe to conquer before being
+                  conquered. You'll be the chief leader (CL) of your planet where you can collect resources and trade
+                  them
+                  to build,
+                  research or create</p>
+              </li>
+
+              <li class="road-map__item step step--right">
+                <h3 class="step__title title title--h3">Stream tournamet</h3>
+                <p class="step__text text">You'll be the chief leader (CL) of your planet where you can collect
+                  resources
+                  and trade them to build, research or
+                  create: NFT Defenses, ships and buildings. This is a multichain game initially running on Binance,
+                  Solana
+                  and Wax.</p>
+                <p class="step__text text">Galaxydust is a space strategy based NFT game where you will have to fight
+                  in
+                  the
+                  universe to conquer before being
+                  conquered. You'll be the chief leader (CL) of your planet where you can collect resources and trade
+                  them
+                  to build,
+                  research or create</p>
+              </li>
+
+              <li class="road-map__item step step--right">
+                <h3 class="step__title title title--h3">Stream tournamet</h3>
+                <p class="step__text text">Pet’s Drom is strategy based NFT game where you will have to fight in the
+                  universe to conquer before being conquered.
+                  You'll be the chief leader (CL) of your planet where you can collect resources and trade them to
+                  build,
+                  research or
+                  create: NFT Defenses, ships and buildings. This is a multichain game initially running on Binance,
+                  Solana
+                  and Wax.</p>
+                <p class="step__text text">You'll be the chief leader (CL) of your planet where you can collect
+                  resources
+                  and trade them to build, research or
+                  create: NFT Defenses, ships and buildings. This is a multichain game initially running on Binance,
+                  Solana
+                  and Wax.</p>
+                <p class="step__text text">Galaxydust is a space strategy based NFT game where you will have to fight
+                  in
+                  the
+                  universe to conquer before being
+                  conquered. You'll be the chief leader (CL) of your planet where you can collect resources and trade
+                  them
+                  to build,
+                  research or create</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </section>
+
+      <div class="cloud-container cloud-container--litle">
+        <img src="img/cloud--litle.svg" alt="" width="87" height="55.75" aria-hidden="true" class="cloud cloud--9">
+      </div>
+      <div class="cloud-container cloud-container--left-to-right">
+        <img src="img/cloud--left-to-right.svg" alt="" width="490" height="108" aria-hidden="true"
+          class="cloud cloud--10 cloud--left-to-right">
+      </div>
+
+      <section class="economy container block-animation  block">
+        <h2 class="economy__title title">PET`S DROME Economy</h2>
+        <p class="economy__text text">Our economy is real and sustainable because it is not defined by the price of a
+          token or
+          by a network blockchain.</p>
+
+        <ul class="economy__list">
+          <li class="economy__item benefit">
+            <img class="benefit__img" width="56" height="56" src="img/pd-token.svg" alt="PD-token.">
+            <h3 class="benefit__title">PD Token</h3>
+            <p class="benefit__text text">This is our in-game token, which is always 1:1 with USD. Thus allowing
+              nothing
+              to
+              be affected by the trade. And we will ensure everyone's liquidity.</p>
+          </li>
+
+          <li class="economy__item benefit">
+            <img class="benefit__img" width="56" height="56" src="img/multichain.svg" alt="Multichain.">
+            <h3 class="benefit__title">Multichain</h3>
+            <p class="benefit__text text">Multichain technology allows us to access the game from several
+              decentralized
+              networks with the aim of facilitating access to the player.</p>
+          </li>
+
+          <li class="economy__item benefit">
+            <img class="benefit__img" width="56" height="56" src="img/daos.svg" alt="DAOs.">
+            <h3 class="benefit__title">DAOs</h3>
+            <p class="benefit__text text">They will decide the future aspects of our metaverse, voting on political
+              changes,
+              economic endeavors, and even the game's content design.</p>
+          </li>
+        </ul>
+      </section>
+
+      <div class="cloud-container cloud-container--left-to-right">
+        <img src="img/cloud--left-to-right.svg" alt="" aria-hidden="true" width="491" height="108"
+          class="cloud cloud--11 cloud--left-to-right">
+      </div>
+
+      <section class="raritiens container block-animation  block">
+        <h2 class="raritiens__title title">Raritiens</h2>
+
+        <div class="raritiens__slider slider">
+          <ul class="slider__list">
+            <li class="slider__item slider__item--active">
+              <div class="slider__img-container img-container">
+                <img src="img/snail.png" width="66%" srcset="img/snail@2x.png 2x" alt="Snail." class="slider__img">
+              </div>
+            </li>
+            <li class="slider__item">
+              <div class="slider__img-container img-container">
+                <img src="img/dog.png" width="66%" srcset="img/dog@2x.png 2x" alt="Dog." class="slider__img">
+              </div>
+            </li>
+            <li class="slider__item">
+              <div class="slider__img-container img-container">
+                <img src="img/horse.png" width="66%" srcset="img/horse@2x.png 2x" alt="Horse." class="slider__img">
+              </div>
+            </li>
+          </ul>
+
+          <div class="slider__menu">
+            <ul class="slider__menu-list">
+              <li class="slider__menu-item">
+                <button type="button" class="slider__menu-button slider__menu-button--active"><span
+                    class="visually-hidden">Slider
+                    step</span></button>
+              </li>
+              <li class="slider__menu-item">
+                <button type="button" class="slider__menu-button"><span class="visually-hidden">Slider
+                    step</span></button>
+              </li>
+              <li class="slider__menu-item">
+                <button type="button" class="slider__menu-button"><span class="visually-hidden">Slider
+                    step</span></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="team container block-animation  block">
+        <h2 class="team__title title">Our team</h2>
+
+        <ul class="team__list">
+          <li class="team__item person-card">
+            <img src="img/EMILIO-LAMAS.png" alt="" srcset="img/EMILIO-LAMAS@2x.png" class="person-card__img"
+              width="100%">
+            <h3 class="person-card__name title title--h3">EMILIO LAMAS</h3>
+            <p class="person-card__company-position">Founder/CEO</p>
+          </li>
+
+          <li class="team__item person-card">
+            <img src="img/DAVID-MIJARES.png" alt="" srcset="img/DAVID-MIJARES@2x.png" class="person-card__img"
+              width="100%">
+            <h3 class="person-card__name title title--h3">DAVID MIJARES</h3>
+            <p class="person-card__company-position">Developer/CEO</p>
+          </li>
+
+          <li class="team__item person-card">
+            <img src="img/ARTEM-BELIAEV.png" alt="" srcset="img/ARTEM-BELIAEV@2x.png" class="person-card__img"
+              width="100%">
+            <h3 class="person-card__name title title--h3">ARTEM BELIAEV</h3>
+            <p class="person-card__company-position">CEO/Business manager</p>
+          </li>
+
+          <li class="team__item person-card">
+            <img src="img/ANTON-GOLOVKIN.png" alt="" srcset="img/ANTON-GOLOVKIN@2x.png" class="person-card__img"
+              width="100%">
+            <h3 class="person-card__name title title--h3">ANTON GOLOVKIN</h3>
+            <p class="person-card__company-position">Law department manager</p>
+          </li>
+
+          <li class="team__item person-card">
+            <img src="img/OMAR-GIL.png" alt="" srcset="img/OMAR-GIL@2x.png" class="person-card__img" width="100%">
+            <h3 class="person-card__name title title--h3">OMAR GIL</h3>
+            <p class="person-card__company-position">Designer</p>
+          </li>
+
+          <li class="team__item person-card">
+            <img src="img/DANIEL-MESA.png" alt="" srcset="img/DANIEL-MESA@2x.png" class="person-card__img" width="100%">
+            <h3 class="person-card__name title title--h3">DANIEL MESA</h3>
+            <p class="person-card__company-position">Developer/CEO</p>
+          </li>
+
+          <li class="team__item person-card">
+            <img src="img/SERGEI-IVANOV.png" alt="" srcset="img/SERGEI-IVANOV@2x.png" class="person-card__img"
+              width="100%">
+            <h3 class="person-card__name title title--h3">SERGEI IVANOV</h3>
+            <p class="person-card__company-position">CEO/Business manager</p>
+          </li>
+
+          <li class="team__item person-card">
+            <img src="img/CARLOS-BRONKHORST.png" alt="" srcset="img/CARLOS-BRONKHORST@2x.png" class="person-card__img"
+              width="100%">
+            <h3 class="person-card__name title title--h3">CARLOS BRONKHORST</h3>
+            <p class="person-card__company-position">Law department manager</p>
+          </li>
+        </ul>
+      </section>
+
+      <div class="cloud-container cloud-container--left-to-right-speed">
+        <img src="img/cloud--left-to-right-speed.svg" width="545" height="181" alt="" aria-hidden="true"
+          class="cloud cloud--12 cloud--left-to-right cloud--left-to-right-speed">
+      </div>
+
+      <section class="faq container block-animation  block">
+        <h2 class="faq__title title">FAQ</h2>
+
+        <ul class="faq__list">
+          <li class="faq__item question">
+            <div class="question__title-container">
+              <h3 class="question__title title title--h3">Is Pet’s Drome free-to-pay?</h3>
+              <button class="question__button"><span class="visually-hidden">Open button</span></button>
+            </div>
+
+            <p class="question__text text">No, you can't play for free. The mechanics is that the game is built on a
+              p2p
+              economy, where you have to have a NFT to
+              start playing: explore, collect, build and create other NFTs that you can trade for profit or improve
+              your
+              own
+              assets/account within the game. No token farming within the game This is a competitive game where you
+              profit
+              by playing</p>
+          </li>
+
+          <li class="faq__item question">
+            <div class="question__title-container">
+              <h3 class="question__title title title--h3">How quickly will I start earning with PET`S DROME?</h3>
+              <button class="question__button"><span class="visually-hidden">Open button</span></button>
+            </div>
+
+            <p class="question__text"></p>
+          </li>
+
+          <li class="faq__item question">
+            <div class="question__title-container">
+              <h3 class="question__title title title--h3">Is PET`S DROME free-to-pay?</h3>
+              <button class="question__button"><span class="visually-hidden">Open button</span></button>
+            </div>
+
+            <p class="question__text"></p>
+          </li>
+        </ul>
+      </section>
+
+      <div class="cloud-container cloud-container--litle">
+        <img src="img/cloud--litle.svg" alt="" aria-hidden="true" width="87" height="55.75"
+          class="cloud cloud--13 cloud--litle">
+      </div>
+
+      <section class="social-media container block-animation  block">
+        <h2 class="social-media__title title">Social media</h2>
+
+        <ul class="social-media__list">
+          <li class="social-media__item">
+            <a href="" class="social-media__link">
+              <div class="social-media__img-container">
+                <img src="img/discord-icon-svgrepo-com 1.svg" alt="Discord." width="32" height="32">
+              </div>
+            </a>
+          </li>
+
+          <li class="social-media__item">
+            <a href="" class="social-media__link">
+              <div class="social-media__img-container">
+                <img src="img/telegram-svgrepo-com 1.svg" alt="Telegram." width="32" height="32">
+              </div>
+            </a>
+          </li>
+
+          <li class="social-media__item">
+            <a href="" class="social-media__link">
+              <div class="social-media__img-container">
+                <img src="img/twitter-svgrepo-com 1.svg" alt="Twitter." width="32" height="32">
+              </div>
+            </a>
+          </li>
+
+          <li class="social-media__item">
+            <a href="" class="social-media__link">
+              <div class="social-media__img-container">
+                <img src="img/instagram-svgrepo-com 1.svg" alt="Instgram." width="32" height="32">
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+  </main>
+
+  <footer class="main-footer block-animation">
+    <div class="main-footer__container container">
+      <nav class="main-footer__navigation navigation">
         <a href="#" class="navigation__link navigation__link--logo">
           <picture>
             <source media="(max-width: 850px)" width="96" height="48" srcset="img/logo.svg">
@@ -29,722 +701,46 @@
           </picture>
         </a>
 
-        <div class="main-header__mobile-menu-container">
-          <ul class="navigation__list main-header__mobile-menu-container-centring">
-            <li class="navigation__link-item navigation__link-item--whitepaper">
-              <a href="#" class="navigation__link">Whitepaper</a>
-              <ul class="language-settings">
-                <li class="language-settings__lang">
-                  <button class="language-settings__button language-settings__button--active">English</button>
-                </li>
+        <ul class="navigation__list">
+          <li class="navigation__link-item navigation__link-item--whitepaper">
+            <a href="#" class="navigation__link">Whitepaper</a>
+            <ul class="language-settings">
+              <li class="language-settings__lang">
+                <button class="language-settings__button language-settings__button--active">English</button>
+              </li>
 
-                <li class="language-settings__lang">
-                  <button class="language-settings__button">Russian</button>
-                </li>
+              <li class="language-settings__lang">
+                <button class="language-settings__button">Russian</button>
+              </li>
 
-                <li class="language-settings__lang">
-                  <button class="language-settings__button">Spanish</button>
-                </li>
-              </ul>
-            </li>
+              <li class="language-settings__lang">
+                <button class="language-settings__button">Spanish</button>
+              </li>
+            </ul>
+          </li>
 
-            <li class="navigation__link-item">
-              <a href="#" class="navigation__link">Roadmap</a>
-            </li>
+          <li class="navigation__link-item">
+            <a href="#" class="navigation__link">Roadmap</a>
+          </li>
 
-            <li class="navigation__link-item">
-              <a href="#" class="navigation__link">Pets</a>
-            </li>
+          <li class="navigation__link-item">
+            <a href="#" class="navigation__link">Pets</a>
+          </li>
 
-            <li class="navigation__link-item">
-              <a href="#" class="navigation__link">Team</a>
-            </li>
-          </ul>
-
-          <ul class="navigation__list--mobile-buttons main-header__mobile-menu-container-centring">
-            <li class="navigation__link-item--mobile-buttons">
-              <button class="navigation__mobile-button button button--with-bg">Play Now</button>
-            </li>
-
-            <li class="navigation__link-item--mobile-buttons">
-              <button class="navigation__mobile-button button button--without-bg">NFT Market</button>
-            </li>
-          </ul>
-        </div>
+          <li class="navigation__link-item">
+            <a href="#" class="navigation__link">Team</a>
+          </li>
+        </ul>
 
         <button class="navigation__button button button--without-bg">Play Now</button>
-
-        <button type="button" class="main-header__mobile-menu-button"><span class="visually-hidden">Мобильное
-            меню</span></button>
       </nav>
-    </header>
 
-    <main class="main-content">
-      <section class="first-screen block-animation">
-        <div class="first-screen__container container">
-          <h2 class="first-screen__title">Welcome to the world of PET`s DROMe</h2>
-          <p class="first-screen__text">More than play
-            & earn environment NFT game</p>
+      <p class="main-footer__text">Copyright © PET`S DROME 2022. All rights reserved.</p>
+    </div>
 
-          <div class="first-screen__buttons-container">
-            <button class="first-screen__button button button--with-bg">Play Now</button>
-            <button class="first-screen__button button button--without-bg">NFT Market</button>
-          </div>
+  </footer>
 
-          <div class="first-screen__crypto-exchanges crypto-exchanges">
-            <ul class="crypto-exchanges__list">
-              <li class="crypto-exchanges__item">
-                <picture>
-                  <source media="(max-width: 850px)" srcset="img/sasori.png" width="168" height="68">
-                  <img src="img/sasori.png" width="192" height="75" srcset="img/sasori@2x.png 2x" alt="Sasoripad.">
-                </picture>
-              </li>
-
-              <li class="crypto-exchanges__item">
-                <picture>
-                  <source media="(max-width: 850px)" srcset="img/binance.png" width="168" height="68">
-                  <img src="img/binance.png" width="192" height="75" srcset="img/binance@2x.png 2x" alt="Binance.">
-                </picture>
-              </li>
-
-              <li class="crypto-exchanges__item">
-                <picture>
-                  <source media="(max-width: 850px)" srcset="img/solana.png" width="168" height="68">
-                  <img src="img/solana.png" width="192" height="75" srcset="img/solana@2x.png 2x" alt="Solana.">
-                </picture>
-              </li>
-
-              <li class="crypto-exchanges__item">
-                <picture>
-                  <source media="(max-width: 850px)" srcset="img/wax.png" width="168" height="68">
-                  <img src="img/wax.png" width="192" height="75" srcset="img/wax@2x.png 2x" alt="Wax.">
-                </picture>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <div class="bg--blue">
-        <div class="cloud-container cloud-container--cloud--right-to-left">
-          <img src="img/cloud--right-to-left.svg" alt="" width="490" height="108" aria-hidden="true"
-            class="cloud cloud--1 cloud--right-to-left">
-        </div>
-
-        <div class="cloud-container cloud-container--litle">
-          <img src="img/cloud--litle.svg" alt="" aria-hidden="true" width="87" height="55.75"
-            class="cloud cloud--2 cloud--litle">
-        </div>
-
-        <section class="our-uniqueness container block-animation bg--blue block">
-          <div class="our-uniqueness__img-container img-container">
-            <picture>
-              <img src="img/horse.png" width="66%" srcset="img/horse@2x.png 2x" alt="Horse."
-                class="our-uniqueness__img">
-            </picture>
-          </div>
-          <div class="our-uniqueness__text-content">
-            <h2 class="our-uniqueness__title title">Radically new concept of
-              a gameplay where everything you own you actually own</h2>
-            <p class="our-uniqueness__text text">Because is a new concept of a game and a gameplay where everything you
-              own
-              you
-              actually own it inside and outside of the game servers with multiblockchain autenthication NFT
-              technologies
-              to
-              back your digital assets up.</p>
-          </div>
-        </section>
-
-        <div class="cloud-container cloud-container--left-to-right-speed">
-          <img src="img/cloud--left-to-right-speed.svg" alt="" aria-hidden="true" width="289" height="96"
-            class="cloud cloud--3 cloud--left-to-right cloud--left-to-right-speed">
-        </div>
-
-        <div class="cloud-container cloud-container--cloud">
-          <img src="img/cloud.svg" alt="" aria-hidden="true" width="463" height="164"
-            class="cloud cloud--4 cloud--cloud">
-        </div>
-
-        <section class="our-benefits container block-animation bg--blue block">
-          <h2 class="our-benefits__title title">Outside of the game with multiblockchain autenthication NFT technologies
-            to back your digital assets up</h2>
-
-          <ul class="our-benefits__list">
-            <li class="our-benefits__item benefit">
-              <img class="benefit__img" width="56" height="56" src="img/pd-token.svg" alt="PD-token.">
-              <h3 class="benefit__title">PD Token</h3>
-              <p class="benefit__text text">This is our in-game token, which is always 1:1 with USD. Thus allowing
-                nothing
-                to
-                be affected by the trade. And we will ensure everyone's liquidity.</p>
-            </li>
-
-            <li class="our-benefits__item benefit">
-              <img class="benefit__img" width="56" height="56" src="img/multichain.svg" alt="Multichain.">
-              <h3 class="benefit__title">Multichain</h3>
-              <p class="benefit__text text">Multichain technology allows us to access the game from several
-                decentralized
-                networks with the aim of facilitating access to the player.</p>
-            </li>
-
-            <li class="our-benefits__item benefit">
-              <img class="benefit__img" width="56" height="56" src="img/daos.svg" alt="DAOs.">
-              <h3 class="benefit__title">DAOs</h3>
-              <p class="benefit__text text">They will decide the future aspects of our metaverse, voting on political
-                changes,
-                economic endeavors, and even the game's content design.</p>
-            </li>
-          </ul>
-        </section>
-
-        <div class="cloud-container cloud-container--litle">
-          <img src="img/cloud--litle.svg" alt="" aria-hidden="true" width="87" height="55.75"
-            class="cloud cloud--5 cloud--litle">
-        </div>
-
-        <section class="about-game container block-animation bg--blue block">
-          <h2 class="about-game visually-hidden">About game</h2>
-
-          <ul class="about-game__list">
-            <li class="about-game__item">
-              <div class="about-game__img-container img-container">
-                <img src="img/horse.png" width="66%" srcset="img/horse@2x.png 2x" alt="Horse." class="about-game__img">
-              </div>
-              <div class="about-game__text-content">
-                <h3 class="about-game__title title">Create passive income insidePET’S DROM with outside assets</h3>
-                <p class="about-game__text text">These are NFTs structures that produce materials passively and an
-                  employee can be chosen to manage the structure and
-                  create passive profits for the owner. The basic mining structures will produce around 8% of their
-                  original
-                  price in
-                  resources (metal or crystal).</p>
-              </div>
-            </li>
-
-            <li class="about-game__item">
-              <div class="about-game__img-container img-container">
-                <img src="img/dog.png" width="66%" srcset="img/dog@2x.png 2x" alt="Dog." class="about-game__img">
-              </div>
-              <div class="about-game__text-content">
-                <h3 class="about-game__title title">Focus on the gaming mechanics where the players can make profits for
-                  playing</h3>
-                <p class="about-game__text text">All you need for the standard explorations is to own at least one ship
-                  and some GDs to start this part of your
-                  adventure. There are infinite rewards hidden deep in the Galaxy.</p>
-              </div>
-
-            </li>
-
-            <li class="about-game__item">
-              <div class="about-game__img-container img-container">
-                <img src="img/snail.png" width="66%" srcset="img/snail@2x.png 2x" alt="Snail." class="about-game__img">
-              </div>
-              <div class="about-game__text-content">
-                <h3 class="about-game__title title">Never was so fun to play!</h3>
-                <p class="about-game__text text">These are NFTs structures that produce materials passively and an
-                  employee can be chosen to manage the structure and
-                  create passive profits for the owner. The basic mining structures will produce around 8% of their
-                  original
-                  price in
-                  resources (metal or crystal).</p>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <div class="cloud-container cloud-container--right-to-left">
-          <img src="img/cloud--right-to-left.svg" alt="" aria-hidden="true" width="491" height="108"
-            class="cloud cloud--6 cloud--right-to-left">
-        </div>
-
-        <div class="cloud-container cloud-container--litle">
-          <img src="img/cloud--litle.svg" alt="" aria-hidden="true" width="87" height="55.75"
-            class="cloud cloud--7 cloud--litle">
-        </div>
-
-        <section class="banner block-animation bg--blue block">
-          <div class="banner__container container">
-            <h2 class="banner__title">No Ponzi schemes like most NFT games</h2>
-            <p class="banner__text text text--white">These are NFTs structures that produce materials passively and an
-              employee
-              can be chosen
-              to manage the structure and
-              create passive profits for the owner. The basic mining structures will produce around 8% of their original
-              price in
-              resources (metal or crystal).</p>
-          </div>
-        </section>
-
-        <div class="cloud-container cloud-container--litle">
-          <img src="img/cloud--litle.svg" alt="" aria-hidden="true" width="87" height="55.75"
-            class="cloud cloud--8 cloud--litle">
-        </div>
-
-        <section class="we-guarantee container block-animation bg--blue block">
-          <h2 class="we-guarantee__title title">We-guarantee</h2>
-
-          <ul class="we-guarantee__list">
-            <li class="we-guarantee__item benefit">
-              <img class="benefit__img" width="56" height="56" src="img/pd-token.svg" alt="PD-token.">
-              <h3 class="benefit__title">PD Token</h3>
-              <p class="benefit__text text">This is our in-game token, which is always 1:1 with USD. Thus allowing
-                nothing
-                to
-                be affected by the trade. And we will ensure everyone's liquidity.</p>
-            </li>
-
-            <li class="we-guarantee__item benefit">
-              <img class="benefit__img" width="56" height="56" src="img/multichain.svg" alt="Multichain.">
-              <h3 class="benefit__title">Multichain</h3>
-              <p class="benefit__text text">Multichain technology allows us to access the game from several
-                decentralized
-                networks with the aim of facilitating access to the player.</p>
-            </li>
-
-            <li class="we-guarantee__item benefit">
-              <img class="benefit__img" width="56" height="56" src="img/daos.svg" alt="DAOs.">
-              <h3 class="benefit__title">DAOs</h3>
-              <p class="benefit__text text">They will decide the future aspects of our metaverse, voting on political
-                changes,
-                economic endeavors, and even the game's content design.</p>
-            </li>
-          </ul>
-        </section>
-
-        <section class="road-map container block-animation bg--blue block">
-          <h2 class="road-map__title title">Roadmap</h2>
-
-          <div class="road-map__mobile-container">
-            <div class="road-map__progress-bar progress-bar">
-              <div class="progress-bar__points-container">
-                <div class="progress-bar__point progress-bar__point--achieved"><span
-                    class="progress-bar__point--quartal">Q1</span><span class="progress-bar__point--text">2022</span>
-                </div>
-
-                <div class="progress-bar__point"><span class="progress-bar__point--quartal">Q2</span><span
-                    class="progress-bar__point--text">2022</span> </div>
-                <div class="progress-bar__point"><span class="progress-bar__point--quartal">Q2</span><span
-                    class="progress-bar__point--text">2022</span></div>
-                <div class="progress-bar__point"><span class="progress-bar__point--quartal">Q2</span><span
-                    class="progress-bar__point--text">2022</span></div>
-                <div class="progress-bar__point"><span class="progress-bar__point--quartal">Q2</span><span
-                    class="progress-bar__point--text">2022</span></div>
-
-              </div>
-
-              <div class="progress-bar__line progress-bar__line--progress"></div>
-              <div class="progress-bar__line progress-bar__line--bg"></div>
-            </div>
-
-            <div class="road-map__steps">
-              <ul class="road-map__list">
-                <li class="road-map__item step step--active">
-                  <h3 class="step__title title title--h3">Stream tournamet</h3>
-                  <p class="step__text text">Pet’s Drom is strategy based NFT game where you will have to fight in the
-                    universe to conquer before being conquered.
-                    You'll be the chief leader (CL) of your planet where you can collect resources and trade them to
-                    build,
-                    research or
-                    create: NFT Defenses, ships and buildings. This is a multichain game initially running on Binance,
-                    Solana
-                    and Wax.</p>
-                  <p class="step__text text">You'll be the chief leader (CL) of your planet where you can collect
-                    resources
-                    and trade them to build, research or
-                    create: NFT Defenses, ships and buildings. This is a multichain game initially running on Binance,
-                    Solana
-                    and Wax.</p>
-                  <p class="step__text text">Galaxydust is a space strategy based NFT game where you will have to fight
-                    in
-                    the
-                    universe to conquer before being
-                    conquered. You'll be the chief leader (CL) of your planet where you can collect resources and trade
-                    them
-                    to build,
-                    research or create</p>
-                </li>
-
-                <li class="road-map__item step">
-                  <h3 class="step__title title title--h3">Stream tournamet</h3>
-                  <p class="step__text text">Pet’s Drom is strategy based NFT game where you will have to fight in the
-                    universe to conquer before being conquered.
-                    You'll be the chief leader (CL) of your planet where you can collect resources and trade them to
-                    build,
-                    research or
-                    create: NFT Defenses, ships and buildings. This is a multichain game initially running on Binance,
-                    Solana
-                    and Wax.</p>
-                  <p class="step__text text">You'll be the chief leader (CL) of your planet where you can collect
-                    resources
-                    and trade them to build, research or
-                    create: NFT Defenses, ships and buildings. This is a multichain game initially running on Binance,
-                    Solana
-                    and Wax.</p>
-                </li>
-
-                <li class="road-map__item step">
-                  <h3 class="step__title title title--h3">Stream tournamet</h3>
-                  <p class="step__text text">Pet’s Drom is strategy based NFT game where you will have to fight in the
-                    universe to conquer before being conquered.
-                    You'll be the chief leader (CL) of your planet where you can collect resources and trade them to
-                    build,
-                    research or
-                    create: NFT Defenses, ships and buildings. This is a multichain game initially running on Binance,
-                    Solana
-                    and Wax.</p>
-                  <p class="step__text text">Galaxydust is a space strategy based NFT game where you will have to fight
-                    in
-                    the
-                    universe to conquer before being
-                    conquered. You'll be the chief leader (CL) of your planet where you can collect resources and trade
-                    them
-                    to build,
-                    research or create</p>
-                </li>
-
-                <li class="road-map__item step step--right">
-                  <h3 class="step__title title title--h3">Stream tournamet</h3>
-                  <p class="step__text text">You'll be the chief leader (CL) of your planet where you can collect
-                    resources
-                    and trade them to build, research or
-                    create: NFT Defenses, ships and buildings. This is a multichain game initially running on Binance,
-                    Solana
-                    and Wax.</p>
-                  <p class="step__text text">Galaxydust is a space strategy based NFT game where you will have to fight
-                    in
-                    the
-                    universe to conquer before being
-                    conquered. You'll be the chief leader (CL) of your planet where you can collect resources and trade
-                    them
-                    to build,
-                    research or create</p>
-                </li>
-
-                <li class="road-map__item step step--right">
-                  <h3 class="step__title title title--h3">Stream tournamet</h3>
-                  <p class="step__text text">Pet’s Drom is strategy based NFT game where you will have to fight in the
-                    universe to conquer before being conquered.
-                    You'll be the chief leader (CL) of your planet where you can collect resources and trade them to
-                    build,
-                    research or
-                    create: NFT Defenses, ships and buildings. This is a multichain game initially running on Binance,
-                    Solana
-                    and Wax.</p>
-                  <p class="step__text text">You'll be the chief leader (CL) of your planet where you can collect
-                    resources
-                    and trade them to build, research or
-                    create: NFT Defenses, ships and buildings. This is a multichain game initially running on Binance,
-                    Solana
-                    and Wax.</p>
-                  <p class="step__text text">Galaxydust is a space strategy based NFT game where you will have to fight
-                    in
-                    the
-                    universe to conquer before being
-                    conquered. You'll be the chief leader (CL) of your planet where you can collect resources and trade
-                    them
-                    to build,
-                    research or create</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-        </section>
-
-        <div class="cloud-container cloud-container--litle">
-          <img src="img/cloud--litle.svg" alt="" width="87" height="55.75" aria-hidden="true"
-            class="cloud cloud--9">
-        </div>
-        <div class="cloud-container cloud-container--left-to-right">
-          <img src="img/cloud--left-to-right.svg" alt="" width="490" height="108" aria-hidden="true"
-            class="cloud cloud--10 cloud--left-to-right">
-        </div>
-
-        <section class="economy container block-animation bg--blue block">
-          <h2 class="economy__title title">PET`S DROME Economy</h2>
-          <p class="economy__text text">Our economy is real and sustainable because it is not defined by the price of a
-            token or
-            by a network blockchain.</p>
-
-          <ul class="economy__list">
-            <li class="economy__item benefit">
-              <img class="benefit__img" width="56" height="56" src="img/pd-token.svg" alt="PD-token.">
-              <h3 class="benefit__title">PD Token</h3>
-              <p class="benefit__text text">This is our in-game token, which is always 1:1 with USD. Thus allowing
-                nothing
-                to
-                be affected by the trade. And we will ensure everyone's liquidity.</p>
-            </li>
-
-            <li class="economy__item benefit">
-              <img class="benefit__img" width="56" height="56" src="img/multichain.svg" alt="Multichain.">
-              <h3 class="benefit__title">Multichain</h3>
-              <p class="benefit__text text">Multichain technology allows us to access the game from several
-                decentralized
-                networks with the aim of facilitating access to the player.</p>
-            </li>
-
-            <li class="economy__item benefit">
-              <img class="benefit__img" width="56" height="56" src="img/daos.svg" alt="DAOs.">
-              <h3 class="benefit__title">DAOs</h3>
-              <p class="benefit__text text">They will decide the future aspects of our metaverse, voting on political
-                changes,
-                economic endeavors, and even the game's content design.</p>
-            </li>
-          </ul>
-        </section>
-
-        <div class="cloud-container cloud-container--left-to-right">
-          <img src="img/cloud--left-to-right.svg" alt="" aria-hidden="true" width="491" height="108"
-            class="cloud cloud--11 cloud--left-to-right">
-        </div>
-
-        <section class="raritiens container block-animation bg--blue block">
-          <h2 class="raritiens__title title">Raritiens</h2>
-
-          <div class="raritiens__slider slider">
-            <ul class="slider__list">
-              <li class="slider__item slider__item--active">
-                <div class="slider__img-container img-container">
-                  <img src="img/snail.png" width="66%" srcset="img/snail@2x.png 2x" alt="Snail." class="slider__img">
-                </div>
-              </li>
-              <li class="slider__item">
-                <div class="slider__img-container img-container">
-                  <img src="img/dog.png" width="66%" srcset="img/dog@2x.png 2x" alt="Dog." class="slider__img">
-                </div>
-              </li>
-              <li class="slider__item">
-                <div class="slider__img-container img-container">
-                  <img src="img/horse.png" width="66%" srcset="img/horse@2x.png 2x" alt="Horse." class="slider__img">
-                </div>
-              </li>
-            </ul>
-
-            <div class="slider__menu">
-              <ul class="slider__menu-list">
-                <li class="slider__menu-item">
-                  <button type="button" class="slider__menu-button slider__menu-button--active"><span
-                      class="visually-hidden">Slider
-                      step</span></button>
-                </li>
-                <li class="slider__menu-item">
-                  <button type="button" class="slider__menu-button"><span class="visually-hidden">Slider
-                      step</span></button>
-                </li>
-                <li class="slider__menu-item">
-                  <button type="button" class="slider__menu-button"><span class="visually-hidden">Slider
-                      step</span></button>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section class="team container block-animation bg--blue block">
-          <h2 class="team__title title">Our team</h2>
-
-          <ul class="team__list">
-            <li class="team__item person-card">
-              <img src="img/EMILIO-LAMAS.png" alt="" srcset="img/EMILIO-LAMAS@2x.png" class="person-card__img"
-                width="100%">
-              <h3 class="person-card__name title title--h3">EMILIO LAMAS</h3>
-              <p class="person-card__company-position">Founder/CEO</p>
-            </li>
-
-            <li class="team__item person-card">
-              <img src="img/DAVID-MIJARES.png" alt="" srcset="img/DAVID-MIJARES@2x.png" class="person-card__img"
-                width="100%">
-              <h3 class="person-card__name title title--h3">DAVID MIJARES</h3>
-              <p class="person-card__company-position">Developer/CEO</p>
-            </li>
-
-            <li class="team__item person-card">
-              <img src="img/ARTEM-BELIAEV.png" alt="" srcset="img/ARTEM-BELIAEV@2x.png" class="person-card__img"
-                width="100%">
-              <h3 class="person-card__name title title--h3">ARTEM BELIAEV</h3>
-              <p class="person-card__company-position">CEO/Business manager</p>
-            </li>
-
-            <li class="team__item person-card">
-              <img src="img/ANTON-GOLOVKIN.png" alt="" srcset="img/ANTON-GOLOVKIN@2x.png" class="person-card__img"
-                width="100%">
-              <h3 class="person-card__name title title--h3">ANTON GOLOVKIN</h3>
-              <p class="person-card__company-position">Law department manager</p>
-            </li>
-
-            <li class="team__item person-card">
-              <img src="img/OMAR-GIL.png" alt="" srcset="img/OMAR-GIL@2x.png" class="person-card__img" width="100%">
-              <h3 class="person-card__name title title--h3">OMAR GIL</h3>
-              <p class="person-card__company-position">Designer</p>
-            </li>
-
-            <li class="team__item person-card">
-              <img src="img/DANIEL-MESA.png" alt="" srcset="img/DANIEL-MESA@2x.png" class="person-card__img"
-                width="100%">
-              <h3 class="person-card__name title title--h3">DANIEL MESA</h3>
-              <p class="person-card__company-position">Developer/CEO</p>
-            </li>
-
-            <li class="team__item person-card">
-              <img src="img/SERGEI-IVANOV.png" alt="" srcset="img/SERGEI-IVANOV@2x.png" class="person-card__img"
-                width="100%">
-              <h3 class="person-card__name title title--h3">SERGEI IVANOV</h3>
-              <p class="person-card__company-position">CEO/Business manager</p>
-            </li>
-
-            <li class="team__item person-card">
-              <img src="img/CARLOS-BRONKHORST.png" alt="" srcset="img/CARLOS-BRONKHORST@2x.png" class="person-card__img"
-                width="100%">
-              <h3 class="person-card__name title title--h3">CARLOS BRONKHORST</h3>
-              <p class="person-card__company-position">Law department manager</p>
-            </li>
-          </ul>
-        </section>
-
-        <div class="cloud-container cloud-container--left-to-right-speed">
-          <img src="img/cloud--left-to-right-speed.svg" width="545" height="181" alt="" aria-hidden="true"
-            class="cloud cloud--12 cloud--left-to-right cloud--left-to-right-speed">
-        </div>
-
-        <section class="faq container block-animation bg--blue block">
-          <h2 class="faq__title title">FAQ</h2>
-
-          <ul class="faq__list">
-            <li class="faq__item question">
-              <div class="question__title-container">
-                <h3 class="question__title title title--h3">Is Pet’s Drome free-to-pay?</h3>
-                <button class="question__button"><span class="visually-hidden">Open button</span></button>
-              </div>
-
-              <p class="question__text text">No, you can't play for free. The mechanics is that the game is built on a
-                p2p
-                economy, where you have to have a NFT to
-                start playing: explore, collect, build and create other NFTs that you can trade for profit or improve
-                your
-                own
-                assets/account within the game. No token farming within the game This is a competitive game where you
-                profit
-                by playing</p>
-            </li>
-
-            <li class="faq__item question">
-              <div class="question__title-container">
-                <h3 class="question__title title title--h3">How quickly will I start earning with PET`S DROME?</h3>
-                <button class="question__button"><span class="visually-hidden">Open button</span></button>
-              </div>
-
-              <p class="question__text"></p>
-            </li>
-
-            <li class="faq__item question">
-              <div class="question__title-container">
-                <h3 class="question__title title title--h3">Is PET`S DROME free-to-pay?</h3>
-                <button class="question__button"><span class="visually-hidden">Open button</span></button>
-              </div>
-
-              <p class="question__text"></p>
-            </li>
-          </ul>
-        </section>
-
-        <div class="cloud-container cloud-container--litle">
-          <img src="img/cloud--litle.svg" alt="" aria-hidden="true" width="87" height="55.75" class="cloud cloud--13 cloud--litle">
-        </div>
-
-        <section class="social-media container block-animation bg--blue block">
-          <h2 class="social-media__title title">Social media</h2>
-
-          <ul class="social-media__list">
-            <li class="social-media__item">
-              <a href="" class="social-media__link">
-                <div class="social-media__img-container">
-                  <img src="img/discord-icon-svgrepo-com 1.svg" alt="Discord." width="32" height="32">
-                </div>
-              </a>
-            </li>
-
-            <li class="social-media__item">
-              <a href="" class="social-media__link">
-                <div class="social-media__img-container">
-                  <img src="img/telegram-svgrepo-com 1.svg" alt="Telegram." width="32" height="32">
-                </div>
-              </a>
-            </li>
-
-            <li class="social-media__item">
-              <a href="" class="social-media__link">
-                <div class="social-media__img-container">
-                  <img src="img/twitter-svgrepo-com 1.svg" alt="Twitter." width="32" height="32">
-                </div>
-              </a>
-            </li>
-
-            <li class="social-media__item">
-              <a href="" class="social-media__link">
-                <div class="social-media__img-container">
-                  <img src="img/instagram-svgrepo-com 1.svg" alt="Instgram." width="32" height="32">
-                </div>
-              </a>
-            </li>
-          </ul>
-        </section>
-      </div>
-
-    </main>
-
-    <footer class="main-footer block-animation">
-      <div class="main-footer__container container">
-        <nav class="main-footer__navigation navigation">
-          <a href="#" class="navigation__link navigation__link--logo">
-            <picture>
-              <source media="(max-width: 850px)" width="96" height="48" srcset="img/logo.svg">
-
-              <img class="navigation__logo" src="img/logo.svg" width="121" height="60" alt="Logo.">
-            </picture>
-          </a>
-
-          <ul class="navigation__list">
-            <li class="navigation__link-item navigation__link-item--whitepaper">
-              <a href="#" class="navigation__link">Whitepaper</a>
-              <ul class="language-settings">
-                <li class="language-settings__lang">
-                  <button class="language-settings__button language-settings__button--active">English</button>
-                </li>
-
-                <li class="language-settings__lang">
-                  <button class="language-settings__button">Russian</button>
-                </li>
-
-                <li class="language-settings__lang">
-                  <button class="language-settings__button">Spanish</button>
-                </li>
-              </ul>
-            </li>
-
-            <li class="navigation__link-item">
-              <a href="#" class="navigation__link">Roadmap</a>
-            </li>
-
-            <li class="navigation__link-item">
-              <a href="#" class="navigation__link">Pets</a>
-            </li>
-
-            <li class="navigation__link-item">
-              <a href="#" class="navigation__link">Team</a>
-            </li>
-          </ul>
-
-          <button class="navigation__button button button--without-bg">Play Now</button>
-        </nav>
-
-        <p class="main-footer__text">Copyright © PET`S DROME 2022. All rights reserved.</p>
-      </div>
-
-    </footer>
-
-    <script src="bundle.js"></script>
-  </body>
+  <script src="bundle.js"></script>
+</body>
 
 </html>

@@ -1,6 +1,8 @@
 .main-footer {
   background: #3a426b;
   padding: 80px 0;
+  position: relative;
+  z-index: 2;
 
   @media (max-width: $max-mobile-width) {
     padding: 80px 0 32px 0;

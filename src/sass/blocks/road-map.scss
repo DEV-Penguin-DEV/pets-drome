@@ -4,7 +4,7 @@
     height: max-content;
   }
   @media (min-width: $max-mobile-width) {
-    height: 520px;
+    min-height: 520px;
   }
 }
 
