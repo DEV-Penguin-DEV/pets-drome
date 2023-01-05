@@ -2,19 +2,23 @@ const blockElements = document.querySelectorAll('.block-animation');
 const cloudElements = document.querySelectorAll('.cloud');
 const mediaQuery = window.matchMedia('(max-width: 850px)');
 
-const onMouseScroll = (e) => {
-  if (e.wheelDeltaY < 0) {
+let userLastY = pageYOffset;
 
+const onMouseScroll = () => {
+  const userCurrentY = pageYOffset;
+  if (userLastY < userCurrentY) {
     cloudElements.forEach((cloud) => {
       const cloudCurrentTop = Number(window.getComputedStyle(cloud).top.replace(/(?:-|\D)[\D]/g, ''));
-      cloud.style.top = `${cloudCurrentTop - 20}px`;
+      cloud.style.top = `${cloudCurrentTop - 7}px`;
     });
-  } else {
+  } else if (userLastY > userCurrentY) {
     cloudElements.forEach((cloud) => {
       const cloudCurrentTop = Number(window.getComputedStyle(cloud).top.replace(/(?:-|\D)[\D]/g, ''));
-      cloud.style.top = `${cloudCurrentTop + 20}px`;
+      cloud.style.top = `${cloudCurrentTop + 7}px`;
     });
   }
+
+  userLastY = userCurrentY;
 };
 
 const Visible = function (target) {
@@ -54,8 +58,6 @@ export const startAnimation = () => {
       window.addEventListener('scroll', () => Visible(block));
     });
   } else {
-    document.addEventListener('wheel', (e) => onMouseScroll(e));
+    window.addEventListener('scroll', onMouseScroll);
   }
-
-
 };
