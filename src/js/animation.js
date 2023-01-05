@@ -4,14 +4,15 @@ const mediaQuery = window.matchMedia('(max-width: 850px)');
 
 const onMouseScroll = (e) => {
   if (e.wheelDeltaY < 0) {
+
     cloudElements.forEach((cloud) => {
       const cloudCurrentTop = Number(window.getComputedStyle(cloud).top.replace(/(?:-|\D)[\D]/g, ''));
-      cloud.style.top = `${cloudCurrentTop - 2}px`;
+      cloud.style.top = `${cloudCurrentTop - 20}px`;
     });
   } else {
     cloudElements.forEach((cloud) => {
       const cloudCurrentTop = Number(window.getComputedStyle(cloud).top.replace(/(?:-|\D)[\D]/g, ''));
-      cloud.style.top = `${cloudCurrentTop + 2}px`;
+      cloud.style.top = `${cloudCurrentTop + 20}px`;
     });
   }
 };
