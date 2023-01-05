@@ -6,3 +6,13 @@
     position: relative;
   }
 }
+
+.bg--blue__top-part-img {
+  position: absolute;
+  top: -17vw;
+  z-index: 3;
+
+  @media (max-width: $max-mobile-width) {
+    display: none;
+  }
+}
