@@ -29,6 +29,14 @@
 }
 
 .main-footer__navigation {
+  margin-bottom: 40px;
+
+  & .navigation__list {
+    @media (min-width: $max-mobile-width) {
+      width: 37.8vw;
+    }
+  }
+
   @media (max-width: $max-mobile-width) {
     margin-bottom: 64px;
     display: flex;

@@ -2,6 +2,20 @@ const blockElements = document.querySelectorAll('.block-animation');
 const cloudElements = document.querySelectorAll('.cloud');
 const mediaQuery = window.matchMedia('(max-width: 850px)');
 
+const onMouseScroll = (e) => {
+  if (e.wheelDeltaY < 0) {
+    cloudElements.forEach((cloud) => {
+      const cloudCurrentTop = Number(window.getComputedStyle(cloud).top.replace(/(?:-|\D)[\D]/g, ''));
+      cloud.style.top = `${cloudCurrentTop - 2}px`;
+    });
+  } else {
+    cloudElements.forEach((cloud) => {
+      const cloudCurrentTop = Number(window.getComputedStyle(cloud).top.replace(/(?:-|\D)[\D]/g, ''));
+      cloud.style.top = `${cloudCurrentTop + 2}px`;
+    });
+  }
+};
+
 const Visible = function (target) {
   // Все позиции элемента
   const targetPosition = {
@@ -17,7 +31,6 @@ const Visible = function (target) {
       right: window.pageXOffset + document.documentElement.clientWidth,
       bottom: window.pageYOffset + document.documentElement.clientHeight
     };
-
   if (targetPosition.bottom > windowPosition.top && // Если позиция нижней части элемента больше позиции верхней чайти окна, то элемент виден сверху
     targetPosition.top < windowPosition.bottom && // Если позиция верхней части элемента меньше позиции нижней чайти окна, то элемент виден снизу
     targetPosition.right > windowPosition.left && // Если позиция правой стороны элемента больше позиции левой части окна, то элемент виден слева
@@ -43,8 +56,6 @@ export const startAnimation = () => {
       }
     });
   } else {
-    cloudElements.forEach((cloud) => {
-      window.addEventListener('scroll', () => Visible(cloud));
-    });
+    document.addEventListener('wheel', (e) => onMouseScroll(e));
   }
 };

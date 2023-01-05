@@ -5,11 +5,15 @@
   font-size: 32px;
   line-height: 37px;
   z-index: 5;
+  position: relative;
+  z-index: 5;
 
   &--h3 {
     font-size: 20px;
     line-height: 120%;
     letter-spacing: 0.01em;
+    position: relative;
+    z-index: 5;
   }
 
   @media (max-width: $max-mobile-width) {

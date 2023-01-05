@@ -3,6 +3,9 @@
     padding-bottom: 500px;
     height: max-content;
   }
+  @media (min-width: $max-mobile-width) {
+    height: 520px;
+  }
 }
 
 .road-map__title {
