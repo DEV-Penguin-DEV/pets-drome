@@ -1,6 +1,5 @@
 const blockElements = document.querySelectorAll('.block-animation');
 const cloudElements = document.querySelectorAll('.cloud');
-const mediaQuery = window.matchMedia('(max-width: 850px)');
 
 let userLastY = pageYOffset;
 
@@ -53,11 +52,8 @@ const Visible = function (target) {
 };
 
 export const startAnimation = () => {
-  if (mediaQuery.matches) {
-    blockElements.forEach((block) => {
-      window.addEventListener('scroll', () => Visible(block));
-    });
-  } else {
-    window.addEventListener('scroll', onMouseScroll);
-  }
+  blockElements.forEach((block) => {
+    window.addEventListener('scroll', () => Visible(block));
+  });
+  window.addEventListener('scroll', onMouseScroll);
 };

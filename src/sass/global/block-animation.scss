@@ -2,10 +2,6 @@
   position: relative;
   height: 0;
   width: 100vw;
-
-  @media (max-width: $max-mobile-width) {
-    display: none;
-  }
 }
 
 .cloud {
@@ -79,12 +75,10 @@
 }
 
 .block-animation {
-  @media (max-width: $max-mobile-width) {
-    opacity: 0;
-    transition: 1.75s;
+  opacity: 0;
+  transition: 1.75s;
 
-    &--active {
-      opacity: 1;
-    }
+  &--active {
+    opacity: 1;
   }
 }
