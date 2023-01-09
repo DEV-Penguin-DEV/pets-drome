@@ -8,12 +8,12 @@ const onMouseScroll = () => {
   if (userLastY < userCurrentY) {
     cloudElements.forEach((cloud) => {
       const cloudCurrentTop = Number(window.getComputedStyle(cloud).top.replace(/(?:-|\D)[\D]/g, ''));
-      cloud.style.top = `${cloudCurrentTop - 7}px`;
+      cloud.style.top = `${cloudCurrentTop - 1}px`;
     });
   } else if (userLastY > userCurrentY) {
     cloudElements.forEach((cloud) => {
       const cloudCurrentTop = Number(window.getComputedStyle(cloud).top.replace(/(?:-|\D)[\D]/g, ''));
-      cloud.style.top = `${cloudCurrentTop + 7}px`;
+      cloud.style.top = `${cloudCurrentTop + 1}px`;
     });
   }
 

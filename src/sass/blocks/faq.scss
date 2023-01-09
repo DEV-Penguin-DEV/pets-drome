@@ -75,17 +75,17 @@
 }
 
 .question__text {
-  display: block;
+  display: none;
   font-size: 0;
+  margin-top: 16px;
+  font-size: 16px;
   transition: 0.7s;
 }
 
 .question {
   &--open {
     & .question__text {
-      margin: 0;
-      margin-top: 16px;
-      font-size: 16px;
+      display: block;
     }
 
     & .question__button {
